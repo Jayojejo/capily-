@@ -91,7 +91,8 @@ html,body{width:100%;height:100%;height:100dvh;margin:0;overflow:hidden}body{ove
  #hud .stats{display:none!important}
  #prompt{font-weight:700}
 }
-</style></style></head><body><div id="capilySplash" role="status" aria-live="polite"><div class="splashUI"><div class="splashTitle">🦫 Capily 💗</div><div class="splashSub">Happy Happy, Happy Life</div><div class="splashTrack"><div class="splashFill" id="capilyLoadFill"></div></div><div class="splashText" id="capilyLoadText">Načítavam tvoje mestečko…</div></div></div><script>window.capilyReady=function(){var e=document.getElementById('capilySplash');if(!e)return;document.getElementById('capilyLoadFill').style.width='100%';document.getElementById('capilyLoadText').textContent='Vitaj v Capily! 💗';setTimeout(function(){e.classList.add('splashDone');setTimeout(function(){e.remove()},550)},600)};window.addEventListener('error',function(e){if(document.getElementById('capilySplash'))document.getElementById('capilyLoadText').textContent='Nepodarilo sa načítať hru. Obnov stránku.'});var capilyLoadPct=5;var capilyLoadingTimer=setInterval(function(){var el=document.getElementById('capilyLoadFill');if(!el){clearInterval(capilyLoadingTimer);return}capilyLoadPct=Math.min(90,capilyLoadPct+Math.max(1,(90-capilyLoadPct)*.08));el.style.width=capilyLoadPct+'%'},350);</script><button onclick="openCarService()" style="position:fixed;right:12px;bottom:80px;z-index:30;background:#ffe0ec;border:2px solid #bb7896;border-radius:16px;padding:9px 13px;font-weight:700;cursor:pointer">🔧 Autoservis</button><button id="coupleLauncher" onclick="openCoupleWorld()">💑 ONLINE<br>PRE PÁRY<br><span style="font-size:11px">VSTÚPIŤ</span></button><div id="coupleStatus"></div><div id="coupleScreen"><div class="coupleCard"><button class="btn exit" onclick="closeCoupleWorld()">✕ Späť do mesta</button><h1>💑 CAPILY LOVE WORLD</h1><p>Samostatný online svet pre páry a kamarátov. Každý má vlastnú kapybaru, spolu zbierate srdiečka a vidíte sa v meste.</p><div id="coupleScreenContent"></div></div></div><button id="mobileOnlineButton" type="button" onclick="document.body.classList.remove('mobile-menu-open');openCoupleWorld()">💑 ONLINE</button><button id="mobileMenuToggle" class="btn" type="button" aria-label="Otvoriť menu" onclick="document.body.classList.toggle('mobile-menu-open')">☰</button><button id="enterCarButton" type="button" onclick="toggleRide()" aria-label="Nastúpiť alebo vystúpiť z auta">🚗 Nastúpiť</button><button id="mobileQuickAction" class="btn" type="button" onclick="interact()" style="display:none">🚪 Vstúpiť</button><div id="hud"><div class="top"><div class="panel"><div class="brand"><img src="/capily-icon.png?v=3" alt="" style="width:30px;height:30px;vertical-align:middle;border-radius:9px;margin-right:4px"> <span class="capily-hud-name">CAPILY</span></div><div class="tiny" id="identity">Kapy • level 1</div><div class="tiny" id="coins">🪙 100</div></div><div class="buttons"><button id="mobileMenuClose" class="btn" onclick="document.body.classList.remove('mobile-menu-open')">✕ Zavrieť menu</button><button class="btn" id="mouseModeButton" type="button" onclick="window.toggleMouseMode?.()" style="background:#d7e6ff">🖱️ Ovládanie myšou</button><button class="btn" onclick="openCoupleWorld()">💑 ONLINE SVET</button><button class="btn" onclick="openCreator()">🎨 TVORBA KAPYBARY</button><button class="btn" onclick="openProfile()">🦫 Profil</button><button class="btn" onclick="openCare()">💗 Starostlivosť</button><button class="btn" onclick="openFamily()">🍼 Rodina</button><button class="btn" onclick="openWardrobe()">👗 Šatník & rýchlosť</button><button class="btn" onclick="openTasks()">📋 Úlohy</button><button class="btn" onclick="openArcade()">🕹️ Arkáda 1–1000</button><button class="btn" onclick="openSports()" style="background:#b8ead5">⚽ ŠPORTY</button><button class="btn" onclick="openFashionPets()">👜 Kabelky & plyšáci</button><button class="btn" onclick="openWorldMap()">🗺️ Mapa</button><button class="btn" onclick="openAdventureMissions()" style="background:#ffd47e">🎯 5 MISIÍ → AUTO</button><button class="btn" onclick="openKindergarten()" style="background:#b7e6b4">🍼 ŠKÔLKA</button><button class="btn" onclick="openTrafficHelp()">🏎️ CLS 1000 HP</button><button class="btn" onclick="openCarService()" style="background:#ffe2a5">🔧 GARÁŽ & TUNING</button><button class="btn" onclick="openPassengers()" style="background:#d7e6ff">🦫 SPOLUJAZDCI</button><button class="btn" onclick="travelBeach('east')">🏖️ Pláž</button><button class="btn" id="shopBtn" style="display:none" onclick="openShop()">🛍️ Ponuka</button></div></div><div class="stats" id="stats"></div></div><div id="notice">Vitaj v Capily! Preskúmaj mestečko 🌸</div><div id="prompt"></div><div id="joy"><div id="stick"></div></div><button id="interact" class="btn" type="button" aria-label="Pokračovať alebo vykonať akciu" onclick="if(!document.getElementById('modalback')?.style.display || document.getElementById('modalback').style.display==='none')interact()">NEXT ➜</button><button id="roomAction" class="btn" style="display:none;position:fixed;right:14px;bottom:122px;z-index:15" onclick="openShop()">🎮 Aktivita miestnosti</button><div id="help">💾 Postup sa uklada v tomto prehliadaci. Sukromne/anonymne okno zacina s novou postavou; online miestnost pouziva tvoj bezny ulozeny postup na tomto zariadeni. | MacBook: bežný kurzor = klikanie na menu • ľavým ťahaním po hre = otáčanie kapybary • tlačidlo 🖱️ = FPP režim (ESC uvoľní myš) • WASD • 🕹️ Arkáda v hornom menu • A = vľavo, D = vpravo • E = vstup/výstup • K = kaviareň/kuchyňa • S = salón • O = obchod • V = veterinár • M = matcha | iPad: joystick • potiahni kameru • NEXT = akcia / pokračovať</div><div id="modalback"><div id="modal"><button class="btn close" onclick="closeModal()">✕</button><div id="modalcontent"></div></div></div>
+#mobileQuickAction,#foodPickup,#enterCarButton,#interact,#prompt{touch-action:manipulation;-webkit-tap-highlight-color:transparent;cursor:pointer}#mobileQuickAction,#foodPickup{min-height:54px;min-width:140px}#prompt{z-index:8;cursor:pointer}@media(pointer:coarse){#mobileQuickAction{z-index:66!important}#foodPickup{z-index:65!important}#help{display:none!important}}
+</style></style></head><body><div id="capilySplash" role="status" aria-live="polite"><div class="splashUI"><div class="splashTitle">🦫 Capily 💗</div><div class="splashSub">Happy Happy, Happy Life</div><div class="splashTrack"><div class="splashFill" id="capilyLoadFill"></div></div><div class="splashText" id="capilyLoadText">Načítavam tvoje mestečko…</div></div></div><script>window.capilyReady=function(){var e=document.getElementById('capilySplash');if(!e)return;document.getElementById('capilyLoadFill').style.width='100%';document.getElementById('capilyLoadText').textContent='Vitaj v Capily! 💗';setTimeout(function(){e.classList.add('splashDone');setTimeout(function(){e.remove()},550)},600)};window.addEventListener('error',function(e){if(document.getElementById('capilySplash'))document.getElementById('capilyLoadText').textContent='Nepodarilo sa načítať hru. Obnov stránku.'});var capilyLoadPct=5;var capilyLoadingTimer=setInterval(function(){var el=document.getElementById('capilyLoadFill');if(!el){clearInterval(capilyLoadingTimer);return}capilyLoadPct=Math.min(90,capilyLoadPct+Math.max(1,(90-capilyLoadPct)*.08));el.style.width=capilyLoadPct+'%'},350);</script><button onclick="openCarService()" style="position:fixed;right:12px;bottom:80px;z-index:30;background:#ffe0ec;border:2px solid #bb7896;border-radius:16px;padding:9px 13px;font-weight:700;cursor:pointer">🔧 Autoservis</button><button id="coupleLauncher" onclick="openCoupleWorld()">💑 ONLINE<br>PRE PÁRY<br><span style="font-size:11px">VSTÚPIŤ</span></button><div id="coupleStatus"></div><div id="coupleScreen"><div class="coupleCard"><button class="btn exit" onclick="closeCoupleWorld()">✕ Späť do mesta</button><h1>💑 CAPILY LOVE WORLD</h1><p>Samostatný online svet pre páry a kamarátov. Každý má vlastnú kapybaru, spolu zbierate srdiečka a vidíte sa v meste.</p><div id="coupleScreenContent"></div></div></div><button id="mobileOnlineButton" type="button" onclick="document.body.classList.remove('mobile-menu-open');openCoupleWorld()">💑 ONLINE</button><button id="mobileMenuToggle" class="btn" type="button" aria-label="Otvoriť menu" onclick="document.body.classList.toggle('mobile-menu-open')">☰</button><button id="enterCarButton" type="button" onclick="toggleRide()" aria-label="Nastúpiť alebo vystúpiť z auta">🚗 Nastúpiť</button><button id="mobileQuickAction" aria-label="Vykonať akciu dotykom" class="btn" type="button" onclick="interact()" style="display:none">🚪 Vstúpiť</button><button id="foodPickup" aria-label="Vyzdvihnúť hotovú objednávku" type="button" onclick="pickupVisibleFood()" style="display:none;position:fixed;bottom:calc(env(safe-area-inset-bottom,0px) + 142px);right:12px;z-index:65;background:#fff4dc;border:2px solid #a97950;border-radius:18px;padding:13px;font-weight:800;box-shadow:0 5px 18px #0004;touch-action:manipulation">🍽️ Vyzdvihnúť jedlo</button><div id="hud"><div class="top"><div class="panel"><div class="brand"><img src="/capily-icon.png?v=3" alt="" style="width:30px;height:30px;vertical-align:middle;border-radius:9px;margin-right:4px"> <span class="capily-hud-name">CAPILY</span></div><div class="tiny" id="identity">Kapy • level 1</div><div class="tiny" id="coins">🪙 100</div></div><div class="buttons"><button id="mobileMenuClose" class="btn" onclick="document.body.classList.remove('mobile-menu-open')">✕ Zavrieť menu</button><button class="btn" id="mouseModeButton" type="button" onclick="window.toggleMouseMode?.()" style="background:#d7e6ff">🖱️ Ovládanie myšou</button><button class="btn" onclick="openCoupleWorld()">💑 ONLINE SVET</button><button class="btn" onclick="openCreator()">🎨 TVORBA KAPYBARY</button><button class="btn" onclick="openProfile()">🦫 Profil</button><button class="btn" onclick="openCare()">💗 Starostlivosť</button><button class="btn" onclick="openFamily()">🍼 Rodina</button><button class="btn" onclick="openWardrobe()">👗 Šatník & rýchlosť</button><button class="btn" onclick="openTasks()">📋 Úlohy</button><button class="btn" onclick="openArcade()">🕹️ Arkáda 1–1000</button><button class="btn" onclick="openSports()" style="background:#b8ead5">⚽ ŠPORTY</button><button class="btn" onclick="openFashionPets()">👜 Kabelky & plyšáci</button><button class="btn" onclick="openWorldMap()">🗺️ Mapa</button><button class="btn" onclick="openAdventureMissions()" style="background:#ffd47e">🎯 5 MISIÍ → AUTO</button><button class="btn" onclick="openKindergarten()" style="background:#b7e6b4">🍼 ŠKÔLKA</button><button class="btn" onclick="openTrafficHelp()">🏎️ CLS 1000 HP</button><button class="btn" onclick="openCarService()" style="background:#ffe2a5">🔧 GARÁŽ & TUNING</button><button class="btn" onclick="openPassengers()" style="background:#d7e6ff">🦫 SPOLUJAZDCI</button><button class="btn" onclick="travelBeach('east')">🏖️ Pláž</button><button class="btn" id="shopBtn" style="display:none" onclick="openShop()">🛍️ Ponuka</button></div></div><div class="stats" id="stats"></div></div><div id="notice">Vitaj v Capily! Preskúmaj mestečko 🌸</div><div id="prompt"></div><div id="joy"><div id="stick"></div></div><button id="interact" class="btn" type="button" aria-label="Pokračovať alebo vykonať akciu" onclick="if(!document.getElementById('modalback')?.style.display || document.getElementById('modalback').style.display==='none')interact()">NEXT ➜</button><button id="roomAction" class="btn" style="display:none;position:fixed;right:14px;bottom:122px;z-index:15" onclick="openShop()">🎮 Aktivita miestnosti</button><div id="help">💾 Postup sa uklada v tomto prehliadaci. Sukromne/anonymne okno zacina s novou postavou; online miestnost pouziva tvoj bezny ulozeny postup na tomto zariadeni. | MacBook: bežný kurzor = klikanie na menu • ľavým ťahaním po hre = otáčanie kapybary • tlačidlo 🖱️ = FPP režim (ESC uvoľní myš) • WASD • 🕹️ Arkáda v hornom menu • A = vľavo, D = vpravo • E = vstup/výstup • K = kaviareň/kuchyňa • S = salón • O = obchod • V = veterinár • M = matcha | Mobil a iPad: joystick • potiahni kameru • ťukni na Zobrať / Vstúpiť / Vypiť</div><div id="modalback"><div id="modal"><button class="btn close" onclick="closeModal()">✕</button><div id="modalcontent"></div></div></div>
 <script>window.addEventListener('error',function(e){if(e.message&&(/module|webgl|script/i).test(e.message)){document.getElementById('loadhelp').style.display='block'}});setTimeout(function(){if(!document.querySelector('canvas'))document.getElementById('loadhelp').style.display='block'},9000)</script><div id="loadhelp" style="display:none;position:fixed;z-index:99999;inset:12%;padding:24px;border-radius:22px;background:#fff9ed;color:#48392d;font:18px system-ui;overflow:auto"><h2>Capily sa nepodarilo načítať 🦫</h2><p>Skontroluj internetové pripojenie (hra načítava 3D knižnicu). Na MacBooku spusti súbor <b>Spustiť Capily.command</b> alebo otvor hru cez lokálny server. Na iPade je najspoľahlivejšie otvoriť hru z webovej adresy po jej zverejnení na hostingu.</p><button onclick="location.reload()" style="padding:12px 20px">Skúsiť znova</button></div><script type="module">
 import * as THREE from 'https://cdn.jsdelivr.net/npm/three@0.160.1/build/three.module.js';
 // Ulozeny postup sa pri aktualizacii NIKDY automaticky nemaze.
@@ -512,6 +513,7 @@ const extraDistricts=[
 // Nitra-inspired commercial district: approximate in-game placement, not geographic coordinates.
 const nitraShops=[
  ['Pizza Piccolino','🍕',-31,-62,'#d9a079'],
+ ['Wasabi Nitra','🍣',-17,-62,'#8db6a4'],
  ['OC Mlyny','🛍️',-52,-62,'#b7c5d9'],
  ['Centro Nitra','🏬',55,-62,'#a7c8b9'],
  ['OC Promenada','🛒',-31,72,'#a6c8d9'],
@@ -522,6 +524,14 @@ const nitraShops=[
  ['Dráčik','🧸',-52,-22,'#dbb9a5']
 ];
 for(const b of nitraShops)building(...b);
+// Tri skutocne nitrianske pobocky, rozmiestnene vo fiktivnej hernej mape.
+const capilyMcDonalds=[
+ {name:"McDonald's Bratislavská",address:'Bratislavská cesta 1',x:30,z:-62},
+ {name:"McDonald's Mlyny",address:'Štefánikova trieda 61',x:-52,z:-62},
+ {name:"McDonald's Nitra-Sever",address:'Na Pasienkoch 5576/14',x:66,z:62}
+];
+for(const r of capilyMcDonalds)building(r.name,'🍔',r.x,r.z,'#d8a6a0');
+
 // In-game wayfinding markers for recognizable Nitra destinations.
 const nitraInfo=[
  ['MOSTNÁ • PIZZA PICCOLINO',-31,-62],
@@ -613,7 +623,7 @@ const matchaMenu=[['🍵 Klasická ľadová matcha',15,'water',22],['🍓 Jahodo
 // Capily Stories: friends, missions and unlockable locations.
 const npcNames=['Lili','Oliver','Mimi','Tobi','Nela','Bibi','Max','Ema','Leo','Róza','Sofia','Filip','Kiki','Hugo','Nina','Dodo','Tina','Milo','Zoe','Boris','Luna','Pipo','Stela','Riki','Maja','Teo','Bella','Oli','Fifi','Amálka'];
 const questGoals=['Salón','Kaviareň','Veterinár','Obchod','Kuchyňa'];
-const placeNames=['Kvetinová lúka','Lesná čajovňa','Jazerný domček','Motýlia záhrada','Levanduľová cesta','Tržnica','Jahodová farma','Park priateľstva','Ružové námestie','Autoškola','Pizza Piccolino','OC Mlyny','Centro Nitra','Mestská cesta','Hudobný park','Jarný sad','Knižnica','Tajná pekáreň','Malé kino','Vodopád','Dúhový most','Skleník','Múzeum','Pláž','Zábavný park','Horská chata','Nočná kaviareň','Jazdecká lúka','Záhrada snov','Vyhliadka','Letný festival','Kvetinový palác','Zlatý ostrov'];
+const placeNames=['Kvetinová lúka','Lesná čajovňa','Jazerný domček','Motýlia záhrada','Levanduľová cesta','Tržnica','Jahodová farma','Park priateľstva','Ružové námestie','Autoškola','Pizza Piccolino','Wasabi Nitra','OC Mlyny','Centro Nitra','Mestská cesta','Hudobný park','Jarný sad','Knižnica','Tajná pekáreň','Malé kino','Vodopád','Dúhový most','Skleník','Múzeum','Pláž','Zábavný park','Horská chata','Nočná kaviareň','Jazdecká lúka','Záhrada snov','Vyhliadka','Letný festival','Kvetinový palác','Zlatý ostrov'];
 const npcEmojis=['🌸','🌿','💧','🦋','💜','🛍️','🍓','💗','🌷','🚗','🚦','🎵','🍏','📚','🥐','🎬','🌊','🌈','🌱','🏛️','🏖️','🎡','🏔️','🌙','🐾','✨','🔭','🎪','🌺','🏝️'];
 const worldStories=npcNames.map((npc,i)=>({id:'story'+i,npc,emoji:npcEmojis[i],x:[-4,5,-5,3,-3][i%5],z:[4,1,-5,5,0][i%5],goal:i===9?'Cúvanie':i===10?'Jazda mestom':questGoals[i%5],place:placeNames[i],color:['#dca5b8','#8db39a','#a1b8dc','#cfa77d','#bca5ca'][i%5],intro:i===9?'Vitaj v autoškole! Naučím ťa cúvať s ružovým autíčkom.':i===10?'Teraz ťa čaká jazda mestom. Dodrž trasu a neudieraj do prekážok.':`Ahoj! Som ${npc}. Splň úlohu v budove ${questGoals[i%5]} a ukážem ti nové miesto: ${placeNames[i]}.`,done:'Skvelá práca!'}));
 s.worldQuests??={};s.worldUnlocks??={};s.storyIndex??=0;s.drivingPassed??={};
@@ -659,7 +669,7 @@ window.openWorldMap=()=>openModal(`<h2>🗺️ Mapa Capily</h2><p>Stretneš <b>3
 // Autoškola: skutočne ovládateľná 2D jazdná skúška s kolíziami, cúvaním a mestskými bránami.
 
 // Hrateľné miestnosti: všetky budovy majú vlastnú činnosť a odmenu.
-const roomActivityNames=new Set(['Kino','Autoškola','Knižnica','Pekáreň','Parkový dom','Kvetinárstvo','Hudobný klub','Mestský úrad','Hračkárstvo','Jazerná kaviareň','Hotel','Galéria','Kaviareň','Salón','Obchod','Kuchyňa','Veterinár','Pizza Piccolino','OC Mlyny','Centro Nitra','OC Promenada','OC MAX','Tesco','dm drogéria','Martinus','Dráčik']);
+const roomActivityNames=new Set(['Kino','Autoškola','Knižnica','Pekáreň','Parkový dom','Kvetinárstvo','Hudobný klub','Mestský úrad','Hračkárstvo','Jazerná kaviareň','Hotel','Galéria','Kaviareň','Salón','Obchod','Kuchyňa','Veterinár','Pizza Piccolino','Wasabi Nitra','OC Mlyny','Centro Nitra','OC Promenada','OC MAX','Tesco','dm drogéria','Martinus','Dráčik']);
 const roomThemes={
  'Kino':['🎬','Kino Capily','Pozri si originálny krátky film o kapybare.'],
  'Autoškola':['🚗','Autoškola Akadémia – Akademická 8','Vyskúšaj cúvanie alebo jazdu mestom na ružovom aute.'],
@@ -679,6 +689,7 @@ const roomThemes={
  'Kuchyňa':['🥕','Kuchyňa','Uvar jedlo správnym postupom.'],
  'Veterinár':['🩺','Veterinár','Ošetri zvieratko.'],
  'Pizza Piccolino':['🍕','Pizza Piccolino – Mostná 40','Vyber si pizzu a doplň energiu.'],
+ 'Wasabi Nitra':['🍣','Wasabi Nitra – Mostná 58','Vyber sushi, sety alebo nápoje. Objednávka sa objaví na pulte.'],
  'OC Mlyny':['🛍️','OC Mlyny Nitra','Nákupné centrum inšpirované Nitrou.'],
  'Centro Nitra':['🏬','Centro Nitra','Objav obchody na Chrenovej.'],
  'OC Promenada':['🛒','OC Promenada','Nakupovanie pri rieke Nitra.'],
@@ -707,6 +718,7 @@ const roomQuestions={
 window.openRoomActivity=()=>{if(!inside)return say('Najprv vojdi do budovy.');const n=inside.name,v=roomThemes[n]||['🏡',n,'Zahraj si miestnu výzvu.'];const count=s.roomWins?.[n]||0;
  let html=`<h2>${v[0]} ${v[1]}</h2><p>${v[2]}</p><p>🏆 Splnené aktivity: ${count} · Odmena 65 🪙 + 35 XP</p><div class="actions">`;
  if(n==='Kino')html+='<button class="btn" onclick="watchCapilyFilm(0,0)">🎬 Kapybara a stratená hviezda</button><button class="btn" onclick="watchCapilyFilm(1,0)">🎬 Bigfoot na výlete</button>';
+ else if(n==='Wasabi Nitra')html+='<button class="btn" onclick="openWasabiMenu()">🍣 Otvoriť ponuku Wasabi</button>';
  else if(n==='Pizza Piccolino')html+=`<button class="btn" onclick="buyPiccolino('Margherita',25)">🍕 Margherita • 25 🪙</button><button class="btn" onclick="buyPiccolino('Šunková',32)">🍕 Šunková • 32 🪙</button><button class="btn" onclick="buyPiccolino('Syrová',35)">🧀 Syrová • 35 🪙</button>`;
  else if(n==='Autoškola')html+='<button class="btn" onclick="startDrivingTest(9,true)">🅿️ Cúvanie a parkovanie</button><button class="btn" onclick="startDrivingTest(10,true)">🚦 Jazda mestom</button>';
  else html+='<button class="btn" onclick="startRoomQuiz()">▶️ Začať aktivitu</button>';
@@ -714,7 +726,89 @@ window.openRoomActivity=()=>{if(!inside)return say('Najprv vojdi do budovy.');co
  if(n==='Kaviareň')html+='<button class="btn" onclick="cafeOrderScreen()">🧋 Objednať matchu</button>';
  if(n==='Obchod')html+='<button class="btn" onclick="openWardrobe()">👗 Šatník</button><button class="btn" onclick="openFashionPets()">👜 Kabelky a plyšáci</button>';
  html+='</div><p class="tiny">Môžeš sa sem kedykoľvek vrátiť a hrať znova.</p>';openModal(html)};
-window.buyPiccolino=(name,cost)=>{if(!inside||inside.name!=='Pizza Piccolino')return;if(s.coins<cost)return say('🪙 Nemáš dosť mincí na pizzu.');s.coins-=cost;s.hunger=Math.min(100,(s.hunger||0)+35);s.happy=Math.min(100,(s.happy||0)+12);s.pizzasEaten=(s.pizzasEaten||0)+1;save();updateHud();closeModal();say('🍕 Pizza Piccolino: '+name+'! Dobrú chuť, +35 jedlo.');};
+
+// Realistic-looking, physical 3D orders on the counter. Prices are GAME coins, not EUR.
+const wasabiItems=[
+ ['🍣','Teriyaki chicken roll',125,'sushi','Uramaki'],['🍣','Smoke salmon roll',125,'sushi','Uramaki'],
+ ['🍣','Tuna classic',95,'sushi','Uramaki'],['🍣','Salmon in tempura',129,'sushi','Uramaki'],
+ ['🍣','Sake roll',125,'sushi','Uramaki'],['🍱','Sushi set pre jednu osobu',209,'set','Sushi sety'],
+ ['🍱','Sushi set pre dve osoby',369,'set','Sushi sety'],['🍱','Sushi set pre štyri osoby',589,'set','Sushi sety'],
+ ['🍱','Wasabi deluxe menu',659,'set','Sushi sety'],['🍚','Jazmínová ryža',35,'rice','Prílohy'],
+ ['🥬','Edamame',45,'edamame','Prílohy'],['🥔','Maslové baby zemiaky',35,'rice','Prílohy'],
+ ['🥗','Čerstvý šalát',39,'salad','Prílohy'],['🍵','Matcha-orange',65,'matcha','Nápoje'],
+ ['🍹','Virgin Mojito',49,'drink','Nápoje'],['🍋','Refresh',55,'drink','Nápoje'],
+ ['🫐','Čučoriedkovo-pomarančová limonáda',55,'drink','Nápoje'],['🍓','Jahodová limonáda',55,'drink','Nápoje']
+];
+let foodOrder=null;
+function clearVisibleFood(){if(foodOrder?.group){foodOrder.group.parent?.remove(foodOrder.group);foodOrder.group.traverse(o=>{o.geometry?.dispose();if(o.material?.map)o.material.map.dispose()})}foodOrder=null;const b=document.getElementById('foodPickup');if(b)b.style.display='none'}
+function visibleFoodModel(type,name){
+ const g=new THREE.Group();interior.add(g);g.position.set(0,.16,-3.6);
+ const dish=mesh(new THREE.CylinderGeometry(.72,.72,.055,48),mat('#f9f6ef'),g);dish.position.y=.04;
+ const rim=mesh(new THREE.TorusGeometry(.66,.045,10,48),mat('#d8e1d4'),g);rim.position.y=.09;rim.rotation.x=Math.PI/2;
+ if(type==='matcha'||type==='drink'){
+   let liquid=mesh(new THREE.CylinderGeometry(.235,.21,.48,32),mat(type==='matcha'?'#7d9c52':'#e4a6a0'),g);liquid.position.y=.35;
+   if(type==='matcha'){let orange=mesh(new THREE.CylinderGeometry(.235,.23,.17,32),mat('#edab4d'),g);orange.position.y=.19;let green=mesh(new THREE.CylinderGeometry(.235,.235,.18,32),mat('#759e5b'),g);green.position.y=.49}
+   const glass=mesh(new THREE.CylinderGeometry(.255,.225,.59,36,1,true),new THREE.MeshPhysicalMaterial({color:'#f7ffff',transparent:true,opacity:.28,side:THREE.DoubleSide,depthWrite:false}),g);glass.position.y=.35;
+   for(let i=0;i<5;i++){let ice=mesh(new THREE.BoxGeometry(.085,.085,.09),new THREE.MeshPhysicalMaterial({color:'#f0ffff',transparent:true,opacity:.68}),g);ice.position.set(Math.cos(i*2.4)*.12,.40+(i%2)*.07,Math.sin(i*2.4)*.12)}
+   const straw=mesh(new THREE.CylinderGeometry(.019,.019,.66,10),mat('#fff1d9'),g);straw.position.set(.11,.75,0);straw.rotation.z=.17;
+ }else if(type==='burger'||type==='nuggets'||type==='fries'){
+   if(type==='burger'){
+    const bun=mat('#e5ae5f'),patty=mat('#663d2d');
+    const lower=mesh(new THREE.CylinderGeometry(.40,.42,.15,32),bun,g);lower.position.y=.17;
+    const meat=mesh(new THREE.CylinderGeometry(.41,.41,.10,32),patty,g);meat.position.y=.29;
+    const cheese=mesh(new THREE.BoxGeometry(.80,.025,.74),mat('#f4c84b'),g);cheese.position.y=.36;
+    const lettuce=mesh(new THREE.CylinderGeometry(.44,.44,.045,32),mat('#72a95b'),g);lettuce.position.y=.40;
+    const top=mesh(new THREE.SphereGeometry(.42,28,14,0,Math.PI*2,0,Math.PI/2),bun,g);top.position.y=.44;
+    for(let j=0;j<12;j++){const a=j*2.4,r=.12+(j%3)*.09;const seed=mesh(new THREE.SphereGeometry(.012,6,5),mat('#fff3ce'),g);seed.position.set(Math.cos(a)*r,.79-Math.pow(r,2)*.7,Math.sin(a)*r)}
+   }else if(type==='fries'){
+    const pack=mesh(new THREE.BoxGeometry(.49,.43,.28),mat('#d9453e'),g);pack.position.y=.25;
+    for(let j=0;j<10;j++){const f=mesh(new THREE.BoxGeometry(.055,.43+(j%3)*.07,.055),mat('#f7d46c'),g);f.position.set((j%5-2)*.09,.54,Math.floor(j/5)*.09-.045)}
+   }else for(let j=0;j<7;j++){const a=j*2.4,r=.13+(j%3)*.12;const nug=mesh(new THREE.SphereGeometry(.15,12,8),mat('#dba34d'),g);nug.position.set(Math.cos(a)*r,.19,Math.sin(a)*r);nug.scale.y=.52}
+ }else if(type==='pizza'){
+   const crust=mesh(new THREE.CylinderGeometry(.59,.59,.09,48),mat('#d7a05e'),g);crust.position.y=.15;
+   const sauce=mesh(new THREE.CylinderGeometry(.53,.53,.012,48),mat('#bf4937'),g);sauce.position.y=.205;
+   const cheese=mesh(new THREE.CylinderGeometry(.49,.49,.013,48),mat('#f4df9e'),g);cheese.position.y=.216;
+   for(let i=0;i<9;i++){const a=i*2.4,r=.15+(i%3)*.13;let topping=mesh(new THREE.SphereGeometry(.055,10,8),mat(name.includes('Šunk')?'#db8790':name.includes('Syrov')?'#fff4d0':'#57995b'),g);topping.position.set(Math.cos(a)*r,.237,Math.sin(a)*r);topping.scale.y=.3}
+ }else if(type==='rice'||type==='salad'||type==='edamame'){
+   for(let i=0;i<24;i++){const a=i*2.399,r=.10+(i%4)*.11;let ballFood=mesh(new THREE.SphereGeometry(.075,9,7),mat(type==='rice'?'#fff3d5':i%3===0?'#b44c37':'#5d9b53'),g);ballFood.position.set(Math.cos(a)*r,.15+(i%3)*.045,Math.sin(a)*r);ballFood.scale.y=.6}
+ }else{
+   const count=type==='set'?12:8;
+   for(let i=0;i<count;i++){const x=((i%4)-1.5)*.29,z=(Math.floor(i/4)-(count===8?.5:1))*.29;
+     let rice=mesh(new THREE.CylinderGeometry(.105,.105,.115,18),mat('#f7f2de'),g);rice.position.set(x,.18,z);
+     let seaweed=mesh(new THREE.CylinderGeometry(.107,.107,.07,18,1,true),mat('#263e33'),g);seaweed.position.set(x,.19,z);
+     let fish=mesh(new THREE.CylinderGeometry(.067,.067,.014,18),mat(i%3===0?'#e68c6b':i%3===1?'#86a56e':'#e8b96f'),g);fish.position.set(x,.245,z);
+   }
+   for(let i=0;i<3;i++){let ginger=mesh(new THREE.SphereGeometry(.065,12,8),mat('#e9b5a8'),g);ginger.position.set(.49,.13,-.3+i*.1);ginger.scale.y=.2}
+ }
+ return g;
+}
+window.openCapilyMcMenu=()=>{
+ if(!inside||!inside.name.startsWith("McDonald's"))return;
+ const foods=[['🍔 Big Mac (herná verzia)',38,'burger'],['🍔 Cheeseburger',22,'burger'],['🍗 Chicken McNuggets',32,'nuggets'],['🍟 Hranolky',18,'fries']];
+ openModal('<h2>🍔 '+inside.name+'</h2><p>Vyber si jedlo. Pripravená objednávka sa objaví na pulte a vyzdvihneš ju ťuknutím.</p><div class="actions">'+foods.map((f,i)=>'<button class="btn" style="min-height:56px" onclick="orderCapilyMc('+i+')">'+f[0]+' · 🪙 '+f[1]+'</button>').join('')+'</div><p class="tiny">Herné ceny v minciach, nie skutočný cenník McDonald’s.</p>');
+};
+window.orderCapilyMc=i=>{const foods=[['Big Mac',38,'burger'],['Cheeseburger',22,'burger'],['Chicken McNuggets',32,'nuggets'],['Hranolky',18,'fries']];const f=foods[i];if(f)orderVisibleFood(f[0],f[1],f[2]);};
+window.openWasabiMenu=()=>{if(!inside||inside.name!=='Wasabi Nitra')return;
+ let html='<h2>🍣 Wasabi Nitra</h2><p>Mostná 58 · ponuka inšpirovaná skutočným Wasabi. Ceny sú v herných minciach, nie v eurách.</p>';
+ for(const cat of ['Uramaki','Sushi sety','Prílohy','Nápoje']){
+   html+='<h3>'+cat+'</h3><div style="display:grid;gap:7px">';
+   wasabiItems.forEach((it,i)=>{if(it[4]===cat)html+=`<button class="btn" style="min-height:52px;text-align:left;white-space:normal" onclick="orderWasabi(${i})">${it[0]} ${it[1]} · 🪙 ${it[2]}</button>`});html+='</div>';
+ }
+ html+='<p class="tiny">Ponuka je výber z verejne dostupného jedálneho lístka, nie úplný aktuálny katalóg. Kompletnú aktuálnu ponuku nájdeš na wasabi.order.app.hd.digital/menus.</p>';openModal(html)
+};
+window.orderWasabi=i=>{const item=wasabiItems[i];if(!item)return;orderVisibleFood(item[1],item[2],item[3])};
+function orderVisibleFood(name,cost,type){
+ if(!inside||!['Wasabi Nitra','Pizza Piccolino',...capilyMcDonalds.map(r=>r.name)].includes(inside.name))return;
+ if(foodOrder)return say('🍽️ Najprv si vyzdvihni predchádzajúcu objednávku.');
+ if(s.coins<cost)return say('🪙 Nemáš dosť herných mincí.');
+ s.coins-=cost;save();updateHud();closeModal();
+ foodOrder={name,type,ready:false,group:null};say('👩‍🍳 Pripravujeme '+name+'…');
+ setTimeout(()=>{if(!foodOrder||foodOrder.name!==name||!inside||!interior)return;foodOrder.group=visibleFoodModel(type,name);foodOrder.ready=true;
+ const b=document.getElementById('foodPickup');b.style.display='block';b.textContent='🍽️ Vyzdvihnúť: '+name;say('🍽️ '+name+' je na pulte! Klikni Vyzdvihnúť.')},1500);
+}
+window.pickupVisibleFood=()=>{if(!foodOrder?.ready)return;const n=foodOrder.name;s.hunger=clamp((s.hunger||0)+30);s.happy=clamp((s.happy||0)+12);if(foodOrder.type==='pizza')s.pizzasEaten=(s.pizzasEaten||0)+1;clearVisibleFood();gain(8);save();updateHud();say('😋 Kapybara si vychutnala '+n+'!')};
+
+window.buyPiccolino=(name,cost)=>orderVisibleFood(name,cost,'pizza');
 window.startRoomQuiz=()=>{if(!inside)return;const n=inside.name,q=roomQuestions[n]||roomQuestions['Knižnica'];let order=[0,1,2].sort(()=>Math.random()-.5);openModal(`<h2>${roomThemes[n]?.[0]||'🎮'} Výzva: ${n}</h2><p style="font-size:19px">${q[0]}</p><div class="actions">${order.map(i=>`<button class="btn" onclick="answerRoomQuiz(${i})">${q[1][i]}</button>`).join('')}</div>`)};
 window.answerRoomQuiz=(choice)=>{if(!inside)return;const n=inside.name;if(choice===roomQuestions[n][2]){roomReward(n);openModal(`<h2>🏆 Výborne!</h2><p>Splnila si aktivitu v ${n}. Získala si 65 mincí a 35 XP.</p><button class="btn" onclick="openRoomActivity()">🎮 Hrať znovu</button>`)}else openModal(`<h2>🌷 Skús to znova!</h2><p>To nebola správna odpoveď.</p><button class="btn" onclick="startRoomQuiz()">🔁 Opakovať</button>`)};
 const capilyFilms=[[
@@ -823,7 +917,7 @@ function enterBuilding(p){
  pos.set(0,0,3.45);angle=0;capy.rotation.y=Math.PI;near=null;
  progressTask('visit');if(p.name==='Obchod')progressTask('shopVisit');say(`🏡 Si v budove ${p.name}. Prejdi k dverám a stlač E na odchod.`);
 }
-function leaveBuilding(){if(!inside)return;const p=inside;inside=null;clearInterior();for(const child of scene.children)child.visible=true;pos.set(p.x,0,p.z+6.7);angle=0;near=null;say(`🌳 Vyšla si z budovy ${p.name}.`)}
+function leaveBuilding(){if(!inside)return;clearVisibleFood();const p=inside;inside=null;clearInterior();for(const child of scene.children)child.visible=true;pos.set(p.x,0,p.z+6.7);angle=0;near=null;say(`🌳 Vyšla si z budovy ${p.name}.`)}
 function indoorStand(x,z){const radius=.56;if(Math.abs(x)>5.0||z< -4.95||z>5.0)return false;return !indoorFurniture.some(b=>x>b.minX-radius&&x<b.maxX+radius&&z>b.minZ-radius&&z<b.maxZ+radius)}
 let pos=new THREE.Vector3(0,0,4),moving=false,walkAccum=0;function canStand(x,z){const radius=.64;if(Math.abs(x)>77||Math.abs(z)>77)return false;return !blockers.some(b=>x>b.minX-radius&&x<b.maxX+radius&&z>b.minZ-radius&&z<b.maxZ+radius)&&!(s.adventureCarUnlocked&&typeof riding!=='undefined'&&!riding&&Math.hypot(x-parkedCar.x,z-parkedCar.z)<1.7)&&!(typeof traffic!=='undefined'&&traffic.some(t=>Math.hypot(x-t.model.position.x,z-t.model.position.z)<1.45))}
 
@@ -946,7 +1040,7 @@ function tick(dt){
    if((inside?indoorStand:canStand)(pos.x,pos.z+dz))pos.z+=dz;
    const distance=Math.hypot(pos.x-oldX,pos.z-oldZ);walkAccum+=distance;if(s.adventureMission===1){s.adventureProgress.walk+=distance;adventureAdvance()}
    if(walkAccum>=1){const steps=Math.floor(walkAccum);walkAccum-=steps;progressTask('walk',steps);if((s.activePlush||[]).length)progressTask('plushWalk',steps)}
-   if(distance>.0001){if(!desktopMouseLook)capy.rotation.y=Math.atan2(-delta.x,-delta.z);s.energy=100}else moving=false;
+   if(distance>.0001){if(!desktopMouseLook)capy.rotation.y=Math.atan2(-delta.x,-delta.z);s.energy=clamp(s.energy-.0002)}else moving=false;
   }
  }
  if(!riding)updateMouseFacing();
@@ -971,10 +1065,12 @@ function tick(dt){
   if(carButton){const carNear=s.adventureCarUnlocked&&!inside&&(riding||Math.hypot(pos.x-parkedCar.x,pos.z-parkedCar.z)<3.5);carButton.style.display=carNear?'block':'none';carButton.textContent=riding?'🚗 Vystúpiť':'🚗 Nastúpiť';}
   const quick=$('mobileQuickAction');
   if(touchUI){
-    const canAct=!!near||riding;
+    const readyFood=!!(inside&&foodOrder?.ready);
+    const canAct=!!near||riding||readyFood;
     quick.style.display=canAct?'block':'none';
-    quick.textContent=riding?'🚗 Vystúpiť':near?.exit?'🚪 Vyjsť':near?.vehicle?'🚗 Nastúpiť':near?.pizza?'🍕 Zobrať pizzu':near?.nursery?'🍼 Škôlka':near?.cup?'🍵 Vypiť':near?.npc||near?.cityNpc||near?.beachFriend?'💬 Rozprávať':near?.name==='Autoservis'?'🔧 Servis':near?.playground?'🎠 Ihrisko':'🚪 Vstúpiť';
-    if(near)$('prompt').textContent=$('prompt').textContent.replaceAll('E = ', 'Ťukni: ').replaceAll('stlač E alebo ✨ Akcia','ťukni na Vyjsť').replaceAll('Stlač E','Ťukni na tlačidlo');
+    quick.textContent=readyFood?'🍽️ Zobrať objednávku':riding?'🚗 Vystúpiť':near?.exit?'🚪 Vyjsť':near?.vehicle?'🚗 Nastúpiť':near?.pizza?'🍕 Zobrať pizzu':near?.nursery?'🍼 Škôlka':near?.cup?'🍵 Vypiť':near?.npc||near?.cityNpc||near?.beachFriend?'💬 Rozprávať':near?.name==='Autoservis'?'🔧 Servis':near?.playground?'🎠 Ihrisko':'🚪 Vstúpiť';
+    if(readyFood){$('prompt').style.display='block';$('prompt').textContent='🍽️ Objednávka je hotová — ťukni na Zobrať objednávku';}
+    else if(near)$('prompt').textContent=$('prompt').textContent.replaceAll('E = ', 'Ťukni: ').replaceAll('stlač E alebo ✨ Akcia','ťukni na Vyjsť').replaceAll('Stlač E','Ťukni na tlačidlo').replaceAll('stlač E','ťukni na tlačidlo');
     $('interact').textContent='NEXT ➜';
   }
 }
@@ -1027,7 +1123,7 @@ window.startSport=(i)=>{const t=sportTypes[i];if(!t)return;sportRound={type:i,an
 function sportFinish(win){if(!sportRound||sportRound.done)return;sportRound.done=true;if(win){if(s.adventureMission===3){s.adventureProgress.sport=true;adventureAdvance()}s.coins+=30;s.sportWins=(s.sportWins||0)+1;gain(20);save();updateHud()}$('modalcontent').innerHTML=`<h2>${win?'🏆 Víťazstvo!':'💪 Skús to znovu!'}</h2><p>${win?'Získala si 30 🪙 a 20 XP!':'Tentoraz to nevyšlo, ale môžeš skúsiť ďalší zápas.'}</p><div class="actions"><button class="btn" onclick="startSport(${sportRound.type})">🔁 Hrať znovu</button><button class="btn" onclick="openSports()">⚽ Všetky športy</button></div>`}
 window.sportPick=j=>{if(!sportRound||sportRound.done||sportRound.type===3)return;sportFinish(j===sportRound.answer)};
 window.sportSprint=()=>{if(!sportRound||sportRound.done||sportRound.type!==3)return;sportRound.hits++;const el=$('sportProgress');if(el)el.textContent=sportRound.hits+' / 5 🏁';if(sportRound.hits>=5)sportFinish(true)};
-function openModal(html){if(document.pointerLockElement===renderer.domElement)document.exitPointerLock?.();modal=true;$('modalcontent').innerHTML=html;$('modalback').style.display='flex'}window.closeModal=()=>{document.body.classList.remove('creator-active');arcadeStop();if(driveTest)stopDriving();window.matchaKey=null;window.salonKey=null;modal=false;$('modalback').style.display='none';save()};window.openProfile=()=>openModal(`<h2>🦫 Moja kapybara</h2><p>Vyber meno svojej kapybary. Môžeš ho kedykoľvek zmeniť! 💗</p><label>Meno</label><input id="petname" maxlength="22" value="${s.name.replaceAll('"','&quot;').replaceAll('<','&lt;')}"><label>Povaha</label><select id="personality">${Object.entries(personalities).map(([k,v])=>`<option value="${k}" ${k===s.personality?'selected':''}>${v}</option>`).join('')}</select><label>Farba srsti</label><input type="color" id="furcolor" value="${s.color}"><div class="actions"><button class="btn" onclick="saveProfile()">💗 Uložiť</button></div>`);window.saveProfile=()=>{s.name=$('petname').value.trim()||'Kapy';s.personality=$('personality').value;s.color=$('furcolor').value;changeFur();save();updateHud();closeModal();say(`Ahoj, som ${s.name}! 🦫`)};window.openCare=()=>openModal(`<h2>💗 Starostlivosť o ${s.name}</h2><p>${s.alive?'Pravidelne sa o mňa staraj. Keď sú moje potreby veľmi nízke, môžem ochorieť.':'💔 Kapybara zomrela. Môžeš začať nový príbeh.'}</p><div class="actions">${s.alive?`<button class="btn" onclick="doCare('hunger',24,0,'🥕 Papám mrkvičku!')">🥕 Nakŕmiť</button><button class="btn" onclick="doCare('water',28,0,'💧 Voda je super!')">💧 Napiť sa</button><button class="btn" onclick="doCare('energy',35,0,'😴 Oddýchnuté!')">😴 Spať</button><button class="btn" onclick="doCare('clean',30,0,'🫧 Som čistá!')">🛁 Okúpať</button><button class="btn" onclick="doCare('happy',18,0,'💕 Ďakujem za objatie!')">💕 Pohladkať</button>`:`<button class="btn" onclick="restart()">🌱 Nový príbeh</button>`}</div><p class="tiny">Potreby sa znižujú len počas hrania, nie keď je hra vypnutá.</p>`);window.restart=()=>{s={...defaults,last:Date.now(),taskProgress:{},taskClaims:{},storyIndex:0,worldQuests:{},worldUnlocks:{},drivingPassed:{},ownedBags:[],bag:'',ownedPlush:[],activePlush:[]};save();changeFur();updateCapyShape();setHat();updateSalonLook();updateBeautyDetails();updateOutfit();updateBag();refreshPlush();updateHud();closeModal()};window.doCare=(k,n,c,t)=>{if(s.coins<c)return say('Nemáš dosť mincí');s.coins-=c;care(k,n);closeModal();say(t)};window.openFamily=()=>openModal(`<h2>🍼 Capily Family</h2><p>${s.level>=25?'🎉 Rodina je odomknutá! V budúcej verzii pribudnú mláďatká a ich výchova.':`🔒 Kapybaria rodina sa odomkne na <b>leveli 25</b>. Teraz máš level ${s.level}.`}</p><button class="btn" onclick="closeModal()">Rozumiem 💕</button>`);window.interact=()=>{if(riding){toggleRide();return;}if(near?.vehicle){toggleRide();return;}if(near?.pizza){pickPizza(near.pizza.id);return;}if(near?.nursery){openKindergarten();return;}if(near?.playground){return say(escorting?'🐾 Počkaj, kým prídu všetky mláďatká!':'🎠 Ihrisko je pripravené na hranie!')}if(near?.name==='Autoservis'){openCarService();return;}if(near?.beachFriend){talkBeachFriend(near.beachFriend);return;}if(inside&&!near){openShop();return;}if(!near)return say('Príď bližšie k dverám 🌸');if(near.exit){leaveBuilding();return;}if(near.cup){drinkMatcha();return;}if(near.npc){talkToNpc(near.npc);return;}if(near.cityNpc){talkCityFriend(near.cityNpc.id);return;}enterBuilding(near)};const matchaExtras=[['🍓 Jahodové pyré',5],['🥭 Mango pyré',5],['🧋 Tapiokové perličky',6],['🍦 Vanilkový sirup',3],['🍯 Med',3],['🥥 Kokosové mlieko',4],['🫧 Studená pena',4],['🧊 Extra ľad',1],['🍫 Čokoládová poleva',4],['🍵 Extra matcha',6]];
+function openModal(html){if(document.pointerLockElement===renderer.domElement)document.exitPointerLock?.();modal=true;$('modalcontent').innerHTML=html;$('modalback').style.display='flex'}window.closeModal=()=>{document.body.classList.remove('creator-active');arcadeStop();if(driveTest)stopDriving();window.matchaKey=null;window.salonKey=null;modal=false;$('modalback').style.display='none';save()};window.openProfile=()=>openModal(`<h2>🦫 Moja kapybara</h2><p>Vyber meno svojej kapybary. Môžeš ho kedykoľvek zmeniť! 💗</p><label>Meno</label><input id="petname" maxlength="22" value="${s.name.replaceAll('"','&quot;').replaceAll('<','&lt;')}"><label>Povaha</label><select id="personality">${Object.entries(personalities).map(([k,v])=>`<option value="${k}" ${k===s.personality?'selected':''}>${v}</option>`).join('')}</select><label>Farba srsti</label><input type="color" id="furcolor" value="${s.color}"><div class="actions"><button class="btn" onclick="saveProfile()">💗 Uložiť</button></div>`);window.saveProfile=()=>{s.name=$('petname').value.trim()||'Kapy';s.personality=$('personality').value;s.color=$('furcolor').value;changeFur();save();updateHud();closeModal();say(`Ahoj, som ${s.name}! 🦫`)};window.openCare=()=>openModal(`<h2>💗 Starostlivosť o ${s.name}</h2><p>${s.alive?'Pravidelne sa o mňa staraj. Keď sú moje potreby veľmi nízke, môžem ochorieť.':'💔 Kapybara zomrela. Môžeš začať nový príbeh.'}</p><div class="actions">${s.alive?`<button class="btn" onclick="doCare('hunger',24,0,'🥕 Papám mrkvičku!')">🥕 Nakŕmiť</button><button class="btn" onclick="doCare('water',28,0,'💧 Voda je super!')">💧 Napiť sa</button><button class="btn" onclick="doCare('energy',35,0,'😴 Oddýchnuté!')">😴 Spať</button><button class="btn" onclick="doCare('clean',30,0,'🫧 Som čistá!')">🛁 Okúpať</button><button class="btn" onclick="doCare('happy',18,0,'💕 Ďakujem za objatie!')">💕 Pohladkať</button>`:`<button class="btn" onclick="restart()">🌱 Nový príbeh</button>`}</div><p class="tiny">Potreby sa znižujú len počas hrania, nie keď je hra vypnutá.</p>`);window.restart=()=>{s={...defaults,last:Date.now(),taskProgress:{},taskClaims:{},storyIndex:0,worldQuests:{},worldUnlocks:{},drivingPassed:{},ownedBags:[],bag:'',ownedPlush:[],activePlush:[]};save();changeFur();updateCapyShape();setHat();updateSalonLook();updateBeautyDetails();updateOutfit();updateBag();refreshPlush();updateHud();closeModal()};window.doCare=(k,n,c,t)=>{if(s.coins<c)return say('Nemáš dosť mincí');s.coins-=c;care(k,n);closeModal();say(t)};window.openFamily=()=>openModal(`<h2>🍼 Capily Family</h2><p>${s.level>=25?'🎉 Rodina je odomknutá! V budúcej verzii pribudnú mláďatká a ich výchova.':`🔒 Kapybaria rodina sa odomkne na <b>leveli 25</b>. Teraz máš level ${s.level}.`}</p><button class="btn" onclick="closeModal()">Rozumiem 💕</button>`);window.interact=()=>{if(inside&&foodOrder?.ready){pickupVisibleFood();return;}if(riding){toggleRide();return;}if(near?.vehicle){toggleRide();return;}if(near?.pizza){pickPizza(near.pizza.id);return;}if(near?.nursery){openKindergarten();return;}if(near?.playground){return say(escorting?'🐾 Počkaj, kým prídu všetky mláďatká!':'🎠 Ihrisko je pripravené na hranie!')}if(near?.name==='Autoservis'){openCarService();return;}if(near?.beachFriend){talkBeachFriend(near.beachFriend);return;}if(inside&&!near){if(foodOrder?.ready){pickupVisibleFood();return;}openShop();return;}if(!near)return say('Príď bližšie k dverám 🌸');if(near.exit){leaveBuilding();return;}if(near.cup){drinkMatcha();return;}if(near.npc){talkToNpc(near.npc);return;}if(near.cityNpc){talkCityFriend(near.cityNpc.id);return;}enterBuilding(near)};const matchaExtras=[['🍓 Jahodové pyré',5],['🥭 Mango pyré',5],['🧋 Tapiokové perličky',6],['🍦 Vanilkový sirup',3],['🍯 Med',3],['🥥 Kokosové mlieko',4],['🫧 Studená pena',4],['🧊 Extra ľad',1],['🍫 Čokoládová poleva',4],['🍵 Extra matcha',6]];
 const matchaSizes=[['Malá',0],['Stredná',4],['Veľká',8]];
 function safeText(t){return String(t).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]))}
 function cafeOrderScreen(){
@@ -1049,21 +1145,21 @@ function makeMatchaCup(order){if(!interior)return;let i=order.index;const colors
  let milk=mesh(new THREE.CylinderGeometry(.208,.172,.23,48),liquidMat('#eee0c6'),g);milk.position.y=.22;
  let matcha=mesh(new THREE.CylinderGeometry(.217,.207,.16,48),liquidMat(colors[i]),g);matcha.position.y=.41;
  let foam=mesh(new THREE.CylinderGeometry(.218,.217,.055,48),liquidMat('#c4d4a3'),g);foam.position.y=.516;
- if(false&&order.extras.includes(6)){let foamTop=mesh(new THREE.SphereGeometry(.20,20,12),mat('#f5eee2'),g);foamTop.scale.y=.22;foamTop.position.y=.55}
+ if(order.extras.includes(6)){let foamTop=mesh(new THREE.SphereGeometry(.20,20,12),mat('#f5eee2'),g);foamTop.scale.y=.22;foamTop.position.y=.55}
  let iceMat=new THREE.MeshPhysicalMaterial({color:'#e3f5f1',transparent:true,opacity:.64,roughness:.08});for(let n=0;n<4;n++){let ice=mesh(new THREE.BoxGeometry(.08,.07,.09),iceMat,g);let a=n*2.399;ice.position.set(Math.cos(a)*.11,.35+(n%2)*.085,Math.sin(a)*.10);ice.rotation.set(n*.6,n*.9,n*.3)}
- if(false){for(let n=0;n<9;n++){let pearl=mesh(new THREE.SphereGeometry(.032,10,8),mat('#30221e'),g);pearl.position.set(Math.cos(n*2.4)*.115,.13+(n%3)*.038,Math.sin(n*2.4)*.11)}}
- if(false){let syrup=mesh(new THREE.CylinderGeometry(.204,.18,.055,40),liquidMat('#d77d83'),g);syrup.position.y=.14}
- if(false){let syrup=mesh(new THREE.CylinderGeometry(.204,.18,.05,40),liquidMat('#f4bd58'),g);syrup.position.y=.16}
- if(false){let topping=mesh(new THREE.TorusGeometry(.14,.018,8,28),mat('#654534'),g);topping.position.y=.55;topping.rotation.x=Math.PI/2}
+ if(order.extras.includes(3)||order.index===9){for(let n=0;n<9;n++){let pearl=mesh(new THREE.SphereGeometry(.032,10,8),mat('#30221e'),g);pearl.position.set(Math.cos(n*2.4)*.115,.13+(n%3)*.038,Math.sin(n*2.4)*.11)}}
+ if(order.index===1||order.index===6||order.extras.includes(0)){let syrup=mesh(new THREE.CylinderGeometry(.204,.18,.055,40),liquidMat('#d77d83'),g);syrup.position.y=.14}
+ if(order.index===2||order.index===7||order.extras.includes(1)){let syrup=mesh(new THREE.CylinderGeometry(.204,.18,.05,40),liquidMat('#f4bd58'),g);syrup.position.y=.16}
+ if(order.index===8||order.extras.includes(8)){let topping=mesh(new THREE.TorusGeometry(.14,.018,8,28),mat('#654534'),g);topping.position.y=.55;topping.rotation.x=Math.PI/2}
  let cup=mesh(new THREE.CylinderGeometry(.235,.19,.54,48,1,true),glass,g);cup.position.y=.31;
  let rim=mesh(new THREE.TorusGeometry(.235,.013,8,48),mat('#f9f4eb'),g);rim.position.y=.58;rim.rotation.x=Math.PI/2;
  let straw=mesh(new THREE.CylinderGeometry(.022,.022,.55,14),mat('#d3a891'),g);straw.position.set(.075,.75,0);straw.rotation.z=.13;
  // The label is a real 3D textured plane attached to the cup, with the customer's name.
  let cv=document.createElement('canvas');cv.width=512;cv.height=256;let ctx=cv.getContext('2d');ctx.fillStyle='#fff6e9';ctx.fillRect(0,0,512,256);ctx.fillStyle='#588262';ctx.textAlign='center';ctx.font='bold 43px sans-serif';ctx.fillText('CAPILY CAFÉ',256,74);ctx.fillStyle='#493c33';ctx.font='bold 52px sans-serif';ctx.fillText(order.name.slice(0,16),256,157);ctx.font='26px sans-serif';ctx.fillText(matchaSizes[order.size][0]+' MATCHA',256,210);let texture=new THREE.CanvasTexture(cv);let label=new THREE.Mesh(new THREE.PlaneGeometry(.30,.18),new THREE.MeshBasicMaterial({map:texture,transparent:true,side:THREE.DoubleSide}));label.position.set(0,.34,.229);g.add(label);
  g.userData.labelTexture=texture;return g}
-function placeMatchaOrder(order){if(!inside||inside.name!=='Kaviareň')return;let d=matchaMenu[order.index];if(cafeOrder)return say('🍵 Najprv si vyzdvihni predchádzajúcu matchu.');if(s.coins<order.cost)return say('🪙 Nemáš dosť mincí! Splň úlohy a vráť sa.');s.coins-=order.cost;save();updateHud();cafeOrder={...order,status:'preparing'};window.matchaKey=null;closeModal();say(`🧾 Objednávka pre ${order.name}: ${d[0]}. Barista pripravuje nápoj…`);cafeTimer=setTimeout(()=>{cafeTimer=null;if(!inside||inside.name!=='Kaviareň')return;cafeOrder.status='ready';cafeCup=makeMatchaCup(order);say(`🔔 Matcha pre ${order.name} je hotová! Choď k pultu a stlač E. 🍵`)},3000)}
+function placeMatchaOrder(order){if(!inside||inside.name!=='Kaviareň')return;let d=matchaMenu[order.index];if(cafeOrder)return say('🍵 Najprv si vyzdvihni predchádzajúcu matchu.');if(s.coins<order.cost)return say('🪙 Nemáš dosť mincí! Splň úlohy a vráť sa.');s.coins-=order.cost;save();updateHud();cafeOrder={...order,status:'preparing'};window.matchaKey=null;closeModal();say(`🧾 Objednávka pre ${order.name}: ${d[0]}. Barista pripravuje nápoj…`);cafeTimer=setTimeout(()=>{cafeTimer=null;if(!inside||inside.name!=='Kaviareň')return;cafeOrder.status='ready';cafeCup=makeMatchaCup(order);say(`🔔 Matcha pre ${order.name} je hotová! Ťukni na 🍵 Vypiť pri pulte. 🍵`)},3000)}
 function drinkMatcha(){if(!cafeOrder||cafeOrder.status!=='ready')return;let d=matchaMenu[cafeOrder.index];if(cafeCup){interior.remove(cafeCup);if(cafeCup.userData.labelTexture)cafeCup.userData.labelTexture.dispose();cafeCup.traverse(o=>{if(o.geometry)o.geometry.dispose()});cafeCup=null}cafeOrder=null;s[d[2]]=clamp(s[d[2]]+d[3]);s.happy=clamp(s.happy+5);gain(10);save();updateHud();say(`😋 ${s.name} vypila ${d[0]}! +10 XP 💗`)}
-window.openShop=()=>{if(!inside)return;let p=inside;if(p.name==='Salón'){openSalon();return}if(p.name==='Kaviareň'){if(cafeOrder){say(cafeOrder.status==='ready'?'🍵 Matcha už čaká na pulte!':'⏳ Tvoja matcha sa pripravuje…');return}cafeOrderScreen();return}if(roomActivityNames.has(p.name)){openRoomActivity();return;}let html=`<h2>${p.emoji} ${p.name}</h2><p>Vyber si službu pre ${s.name}.</p><div class="actions">`;let options={'Salón':[['🎀 Mašľa',15,'bow',0],['👑 Korunka',30,'crown',0],['✨ Bez ozdoby',0,'none',0]],'Obchod':[['👜 Kabelky a Bigfoot plyšáci',0,'fashion',0],['👗 Oblečenie a rýchlosť',0,'wardrobe',0],['🎩 Slamený klobúčik',40,'sunhat',0],['🎀 Ružový klobúčik',45,'pinkhat',0],['🧢 Šiltovka',35,'cap',0],['🧶 Čiapka',35,'beanie',0],['🌸 Kvetinová ozdoba',30,'flower',0],['🎀 Mašľa',15,'bow',0],['👑 Korunka',30,'crown',0],['✨ Bez klobúčika',0,'none',0],['🔒 Auto – získaj po 5 misiách',0,'car',0],['🎁 Prekvapenie',20,'happy',25],['🍓 Jahodová minihra',0,'game',0]],'Kuchyňa':[['🥕 Zeleninový tanier',10,'hunger',35],['🥞 Palacinky',18,'hunger',40]],'Veterinár':[['🩺 Ošetrenie',25,'health',45]]};for(let [label,cost,key,val] of options[p.name]||[])html+=`<button class="btn" onclick="buy('${key}',${cost},${val})">${label} ${cost?'🪙'+cost:''}</button>`;html+='</div>';openModal(html)};
+window.openShop=()=>{if(!inside)return;let p=inside;if(p.name==='Salón'){openSalon();return}if(p.name==='Wasabi Nitra'){openWasabiMenu();return}if(p.name.startsWith("McDonald's")){openCapilyMcMenu();return}if(p.name==='Kaviareň'){if(cafeOrder){say(cafeOrder.status==='ready'?'🍵 Matcha už čaká na pulte!':'⏳ Tvoja matcha sa pripravuje…');return}cafeOrderScreen();return}if(roomActivityNames.has(p.name)){openRoomActivity();return;}let html=`<h2>${p.emoji} ${p.name}</h2><p>Vyber si službu pre ${s.name}.</p><div class="actions">`;let options={'Salón':[['🎀 Mašľa',15,'bow',0],['👑 Korunka',30,'crown',0],['✨ Bez ozdoby',0,'none',0]],'Obchod':[['👜 Kabelky a Bigfoot plyšáci',0,'fashion',0],['👗 Oblečenie a rýchlosť',0,'wardrobe',0],['🎩 Slamený klobúčik',40,'sunhat',0],['🎀 Ružový klobúčik',45,'pinkhat',0],['🧢 Šiltovka',35,'cap',0],['🧶 Čiapka',35,'beanie',0],['🌸 Kvetinová ozdoba',30,'flower',0],['🎀 Mašľa',15,'bow',0],['👑 Korunka',30,'crown',0],['✨ Bez klobúčika',0,'none',0],['🔒 Auto – získaj po 5 misiách',0,'car',0],['🎁 Prekvapenie',20,'happy',25],['🍓 Jahodová minihra',0,'game',0]],'Kuchyňa':[['🥕 Zeleninový tanier',10,'hunger',35],['🥞 Palacinky',18,'hunger',40]],'Veterinár':[['🩺 Ošetrenie',25,'health',45]]};for(let [label,cost,key,val] of options[p.name]||[])html+=`<button class="btn" onclick="buy('${key}',${cost},${val})">${label} ${cost?'🪙'+cost:''}</button>`;html+='</div>';openModal(html)};
 window.buy=(key,cost,val)=>{if(key==='car'&&!s.adventureCarUnlocked)return openAdventureMissions();if(s.coins<cost)return say('Najprv si zarob mince! 🪙');s.coins-=cost;if(key==='wardrobe'){openWardrobe();return}if(key==='fashion'){openFashionPets();return}if(['bow','crown','none','sunhat','pinkhat','cap','beanie','flower'].includes(key)){s.hat=key==='none'?'':key;setHat();checkStyleTasks()}else if(key==='car'){s.carOwned=true;s.carColor='#f1a4be';parkedCar.x=pos.x+3;parkedCar.z=pos.z+2;buildCar();say('🚗 Ružový sedan CLS je zaparkované vonku! Príď k nemu a stlač E.')}else if(key==='game'){progressTask('play');s.coins+=10+Math.floor(Math.random()*20);s.happy=clamp(s.happy+8);gain(15)}else{care(key,val);s.happy=clamp(s.happy+3)}gain(10);updateHud();closeModal();say('Hotovo! '+(key==='game'?'🎮 Vyhrávaš mince!':'💕 Kapybara sa teší!'))};
 window.addEventListener('keydown',e=>{
  const key=e.key.toLowerCase();
@@ -1183,5 +1279,164 @@ function capilyExtrasTick(dt){const phase=capilySignalPhase();for(const c of cap
  if(active){const t=performance.now()*.001;tripOverlay.style.opacity=String(.65+.3*Math.sin(t*2));tripBadge.textContent='✨ '+(capilyTripMode==='homer'?'Homerov':'Snový')+' svet · '+Math.ceil((capilyTripUntil-performance.now())/1000)+' s';renderer.domElement.style.filter=`hue-rotate(${Math.sin(t*.8)*28}deg) saturate(1.4) contrast(1.04)`;camera.rotation.z=Math.sin(t*1.5)*.008;}else{renderer.domElement.style.filter='';}
 }
 
-let clock=new THREE.Clock(),time=0;updateHud();if(!s.creatorDone)setTimeout(()=>openCreator(),650);else if(!s.adventureCarUnlocked)setTimeout(()=>say('🎯 Novinka: splň 5 misií a vyhraj svoj ružový CLS! Otvor 🎯 MISIE.'),1400);function animate(){requestAnimationFrame(animate);let dt=Math.min(clock.getDelta(),.05);tick(dt);capilyExtrasTick(dt);coupleTick(dt);updateEngineAudio();time+=dt;if(time>1){time=0;if(s.alive){for(const stat of ['hunger','water','energy','clean','happy','health'])s[stat]=100;updateHud()}}renderer.render(scene,camera)}animate();window.capilyReady&&window.capilyReady();
+// Capily: mobilne odporucania restauracii a pohybujuce sa NPC.
+const capilyFoodStops=[
+ ...capilyMcDonalds.map(r=>({name:r.name,emoji:'🍔',x:r.x,z:r.z+5,address:r.address})),
+ ...places.filter(p=>['Wasabi Nitra','Pizza Piccolino','Kaviareň','Kuchyňa','Pekáreň'].includes(p.name)).map(p=>({name:p.name,emoji:p.emoji,x:p.x,z:p.z+5,address:''}))
+];
+const capilyNeedsUI=document.createElement('div');capilyNeedsUI.id='capilyNeedsUI';capilyNeedsUI.innerHTML='<span id="capilyHungryLabel">🍽️ Som hladná!</span><button id="capilyFoodChoose" type="button">📍 Kam sa najesť?</button>';
+document.body.appendChild(capilyNeedsUI);
+const capilyNeedsCSS=document.createElement('style');capilyNeedsCSS.textContent=`
+#capilyNeedsUI{position:fixed;left:50%;top:calc(env(safe-area-inset-top,0px) + 78px);transform:translateX(-50%);z-index:8;display:none;align-items:center;gap:8px;max-width:calc(100vw - 24px);padding:8px 10px;border-radius:17px;background:#fff9efee;border:2px solid #ffe4c1;box-shadow:0 5px 20px #0002;font-size:13px;font-weight:800;color:#744b36;pointer-events:auto}
+#capilyNeedsUI button{border:0;background:#f6c7d7;color:#674a53;border-radius:12px;padding:10px 12px;font:800 13px system-ui;min-height:44px;white-space:nowrap;touch-action:manipulation}
+#capilyHungryLabel{white-space:nowrap}
+@media(max-width:620px){#capilyNeedsUI{top:auto;bottom:calc(env(safe-area-inset-bottom,0px) + 205px);font-size:12px;padding:6px 8px}#capilyNeedsUI button{font-size:12px}}
+`;document.head.appendChild(capilyNeedsCSS);
+const capilyWayMarker=new THREE.Group();scene.add(capilyWayMarker);
+const capilyWayRing=mesh(new THREE.TorusGeometry(.85,.095,8,32),mat('#f3c267'),capilyWayMarker);capilyWayRing.rotation.x=Math.PI/2;
+const capilyWayBeacon=mesh(new THREE.ConeGeometry(.35,.65,12),mat('#f9b5ce'),capilyWayMarker);capilyWayBeacon.position.y=2.6;capilyWayBeacon.rotation.x=Math.PI;
+let capilyDestination=null,capilyHungerNoticeShown=false;
+window.capilyChooseFood=()=>{
+ const ordered=[...capilyFoodStops].sort((a,b)=>Math.hypot(pos.x-a.x,pos.z-a.z)-Math.hypot(pos.x-b.x,pos.z-b.z));
+ openModal('<h2>🍽️ Kam sa pôjdeme najesť?</h2><p>Som hladná! Vyber reštauráciu a ukážem ti cestu pomocou značky v meste.</p><div style="display:grid;gap:8px">'+ordered.map((r,i)=>'<button class="btn" style="min-height:55px;text-align:left" onclick="capilyGoFood('+capilyFoodStops.indexOf(r)+')">'+r.emoji+' '+r.name+' · '+Math.round(Math.hypot(pos.x-r.x,pos.z-r.z))+' m'+(r.address?' <small>('+r.address+')</small>':'')+'</button>').join('')+'</div>');
+};
+window.capilyGoFood=i=>{capilyDestination=capilyFoodStops[i];if(!capilyDestination)return;closeModal();say('📍 Choď za ružovou značkou: '+capilyDestination.name+'!');};
+document.getElementById('capilyFoodChoose').addEventListener('click',window.capilyChooseFood);
+// Male animovane 3D kapybary po chodnikoch: autonomne sa pohybuju medzi bodmi.
+const capilyWanderPaths=[
+ [[-20,-6],[-18,4],[-20,15],[-31,17],[-35,12]],
+ [[20,-5],[22,8],[29,15],[36,15],[40,4]],
+ [[-39,39],[-30,43],[-19,44],[-13,52]],
+ [[39,38],[49,40],[55,48],[60,55]],
+ [[-56,-52],[-43,-51],[-33,-53],[-24,-55]],
+ [[-5,22],[4,24],[11,29],[20,29]],
+ [[-56,9],[-54,18],[-45,20],[-37,18]],
+ [[12,-35],[19,-39],[29,-40],[38,-38]]
+];
+const capilyWanderers=capilyWanderPaths.map((path,i)=>{
+ const g=new THREE.Group();scene.add(g);
+ const body=mesh(new THREE.SphereGeometry(1,14,10),mat(['#a97955','#9d7557','#c49a72','#b98b65'][i%4]),g);body.scale.set(.38,.32,.62);body.position.y=.54;
+ const head=mesh(new THREE.SphereGeometry(1,12,10),mat(['#b68961','#a57a58','#d0a37c'][i%3]),g);head.scale.set(.32,.30,.35);head.position.set(0,.73,-.46);
+ for(const x of [-.21,.21]){const ear=mesh(new THREE.SphereGeometry(.10,8,6),mat('#8c634b'),g);ear.position.set(x,.97,-.55);const eye=mesh(new THREE.SphereGeometry(.035,7,6),mat('#292521'),g);eye.position.set(x*.85,.78,-.75)}
+ for(const x of [-.26,.26])for(const z of [-.36,.37]){const leg=mesh(new THREE.SphereGeometry(.15,8,6),mat('#826044'),g);leg.position.set(x,.22,z)}
+ g.position.set(path[0][0],0,path[0][1]);return {g,path,next:1,speed:.95+(i%3)*.23,phase:i*.8};
+});
+let capilyNeedsTime=0;
+function capilyLifeTick(dt){
+ for(const npc of capilyWanderers){npc.g.visible=!inside;const point=npc.path[npc.next],dx=point[0]-npc.g.position.x,dz=point[1]-npc.g.position.z,d=Math.hypot(dx,dz);if(d<.24){npc.next=(npc.next+1)%npc.path.length;continue;}const step=Math.min(d,dt*npc.speed);npc.g.position.x+=dx/d*step;npc.g.position.z+=dz/d*step;npc.g.rotation.y=Math.atan2(-dx,-dz);npc.phase+=dt*8;npc.g.position.y=Math.abs(Math.sin(npc.phase))*.025;}
+ capilyWayMarker.visible=!!capilyDestination&&!inside;
+ if(capilyDestination){capilyWayMarker.position.set(capilyDestination.x,0.12,capilyDestination.z);capilyWayMarker.rotation.y+=dt*.7;if(Math.hypot(pos.x-capilyDestination.x,pos.z-capilyDestination.z)<5&&!inside){say('🍽️ Dorazila si! Ťukni na Vstúpiť pri '+capilyDestination.name);capilyDestination=null;}}
+ capilyNeedsTime+=dt;
+ if(capilyNeedsTime>1){capilyNeedsTime=0;
+  if(s.alive){s.hunger=clamp(s.hunger-.16);s.water=clamp(s.water-.08);}
+  const hungry=s.alive&&s.hunger<65;
+  capilyNeedsUI.style.display=hungry&&!inside?'flex':'none';
+  if(hungry&&!capilyHungerNoticeShown&&!inside&&!modal){capilyHungerNoticeShown=true;say('🍔 Som hladná! Vyber mi reštauráciu.');}
+  if(s.hunger>=80)capilyHungerNoticeShown=false;
+  updateHud();
+ }
+}
+let clock=new THREE.Clock(),time=0;updateHud();if(!s.creatorDone)setTimeout(()=>openCreator(),650);else if(!s.adventureCarUnlocked)setTimeout(()=>say('🎯 Novinka: splň 5 misií a vyhraj svoj ružový CLS! Otvor 🎯 MISIE.'),1400);
+// CAPILY NITRA EXPANSION — landmarks, accessible shopping, interactive sports.
+const nitraDistrict=new THREE.Group();scene.add(nitraDistrict);
+function nrBox(w,h,d,c,x,y,z,parent=nitraDistrict){return box(w,h,d,c,x,y,z,parent)}
+function nrLabel(text,x,y,z,scale=1){const can=document.createElement('canvas');can.width=512;can.height=100;const ctx=can.getContext('2d');ctx.fillStyle='#fff9ed';ctx.fillRect(0,0,512,100);ctx.fillStyle='#382d40';ctx.font='bold 38px system-ui';ctx.textAlign='center';ctx.fillText(text,256,62,490);const tex=new THREE.CanvasTexture(can);const m=new THREE.Mesh(new THREE.PlaneGeometry(6.4*scale,1.25*scale),new THREE.MeshBasicMaterial({map:tex,transparent:true,side:THREE.DoubleSide}));m.position.set(x,y,z);nitraDistrict.add(m);return m}
+// Stylised bypass at edge of the playable town, with guardrails and lanes.
+for(const z of [-76,-73])nrBox(150,.13,2.6,'#45494f',0,.07,z);
+for(const z of [-77.8,-71.2]){nrBox(150,.36,.15,'#b7b9bf',0,.34,z);for(let x=-70;x<71;x+=9)nrBox(4,.035,.09,'#fff7d7',x,.16,z===-77.8?-74.5:-73.7)}
+for(const x of [-68,68])nrBox(.32,1.8,9,'#aeb7bd',x,.95,-74.5);
+nrLabel('OBCHVAT NITRY',-53,3,-72,.78);
+// Railway station: building, platforms, rails, sleepers and a moving train.
+const railX=-62,railZ=52;
+nrBox(19,4.8,7,'#e8d7bb',railX,2.4,railZ);nrBox(21,.65,8.4,'#835b57',railX,5.15,railZ);
+for(let i=-2;i<=2;i++)nrBox(1.8,2.6,.14,'#7a9ba7',railX+i*3.2,2.3,railZ-3.58);
+for(const zz of [railZ+7,railZ+9]){nrBox(70,.15,.14,'#767b82',-51,.2,zz);for(let xx=-84;xx<-16;xx+=2)nrBox(.32,.15,3.2,'#71564b',xx,.13,railZ+8)}
+nrBox(29,.3,3.2,'#bfc4c6',-51,.22,railZ+3.7);nrLabel('ZEL. STANICA NITRA',railX,6.2,railZ-3.75,.86);
+const nitraTrain=new THREE.Group();nitraDistrict.add(nitraTrain);for(let i=0;i<3;i++){nrBox(7,2.8,2.65,i===0?'#d7e6ec':'#d3a1af',i*7,1.65,0,nitraTrain);for(let j=0;j<3;j++)nrBox(1.2,.8,.07,'#466d86',i*7-2.1+j*1.9,2.1,-1.37,nitraTrain)}nitraTrain.position.set(-76,0,railZ+8);
+// Three identifiable mall shells, designed to be navigated through touch-first menus.
+const nitraMalls=[
+ {id:'mlyny',name:'OC MLYNY',x:-23,z:39,color:'#e7c9b6',shops:['Móda a oblečenie','Kaviareň a matcha','Kníhkupectvo','Hračkárstvo','Kino']},
+ {id:'centro',name:'CENTRO NITRA',x:56,z:-15,color:'#d2d9b2',shops:['Potraviny','Móda a oblečenie','Drogéria','Športové potreby','Kaviareň']},
+ {id:'max',name:'OC MAX',x:54,z:50,color:'#d7c6e7',shops:['Kino','Elektronika','Potraviny','Hračkárstvo','Občerstvenie']}
+];
+for(const m of nitraMalls){nrBox(15,6.4,11,m.color,m.x,3.2,m.z);nrBox(16,.55,12,'#ece8e5',m.x,6.65,m.z);for(let j=-2;j<=2;j++)nrBox(2,3,.14,'#8bb4c5',m.x+j*2.7,2.65,m.z-5.6);nrLabel(m.name,m.x,7.6,m.z-5.7,.85);nrBox(18,.14,6,'#b8b5b1',m.x,.08,m.z-9.1)}
+// FC Nitra stadium and hockey rink, recognisable pitch markings and goals.
+const fx=-46,fz=-29;
+nrBox(27,.15,38,'#648b60',fx,.13,fz);for(let i=-2;i<=2;i++)nrBox(27,.018,.16,'#f5f5e7',fx,.23,fz+i*7);for(let side of [-1,1]){nrBox(1.1,2.1,7,'#a7b6d0',fx+side*16,1.1,fz);nrBox(.22,2.6,6,'#fafafa',fx,1.3,fz+side*17.8);nrBox(6,.22,.2,'#fafafa',fx,2.6,fz+side*17.8)}nrLabel('FC NITRA',fx,5.6,fz-19,.82);
+const hx=15,hz=-51;nrBox(31,7,22,'#b3c6d9',hx,3.5,hz);nrBox(27,.13,17,'#e7f5fa',hx,.25,hz);for(let i=-1;i<=1;i++)nrBox(.13,.03,16,'#c54d62',hx+i*9,.34,hz);for(let side of [-1,1]){nrBox(.22,2,4,'#d64c5e',hx+side*12,1.35,hz);nrBox(.2,.2,4,'#d64c5e',hx+side*12,2.35,hz)}nrLabel('HK NITRA - ZIMNY STADION',hx,8,hz-11,.85);
+// Quick access from touch-friendly main menu, plus proximity entry buttons.
+const nitraButton=document.createElement('button');nitraButton.className='btn';nitraButton.textContent='🏙️ NITRA • OBCHODY & ŠPORT';nitraButton.onclick=()=>window.openNitraGuide();document.querySelector('#hud .buttons')?.appendChild(nitraButton);
+const nitraQuick=document.createElement('button');nitraQuick.id='nitraQuick';nitraQuick.className='btn';nitraQuick.style.cssText='position:fixed;left:50%;transform:translateX(-50%);bottom:calc(env(safe-area-inset-bottom,0px) + 135px);z-index:50;display:none;padding:14px 18px;max-width:90vw;white-space:normal;background:#ffe2ef;border:2px solid #be7196';document.body.appendChild(nitraQuick);
+window.openNitraGuide=()=>openModal('<h2>🏙️ Nitra v Capily</h2><p>Vyber miesto, kam chceš ísť. Tieto lokality sú štylizované podľa Nitry, nie presná mapa 1:1.</p><div class="actions">'+nitraMalls.map(m=>'<button class="btn" onclick="openNitraMall(\''+m.id+'\')">🛍️ '+m.name+'</button>').join('')+'<button class="btn" onclick="openNitraSport(\'football\')">⚽ FC Nitra – streľba na bránu</button><button class="btn" onclick="openNitraSport(\'hockey\')">🏒 HK Nitra – nájazdy</button><button class="btn" onclick="closeModal();say(\'🚆 Stanica je na juhozápade mapy. Vlak premáva okolo stanice!\')">🚆 Železničná stanica</button></div>');
+window.openNitraMall=id=>{const m=nitraMalls.find(x=>x.id===id);if(!m)return;openModal('<h2>🛍️ '+m.name+'</h2><p>Vyber si obchod alebo prevádzku. Všetko funguje ťuknutím.</p><div class="actions">'+m.shops.map((v,i)=>'<button class="btn" onclick="nitraBuy(\''+id+'\','+i+')">🏬 '+v+'</button>').join('')+'</div><button class="btn" onclick="openNitraGuide()">← Späť na mapu Nitry</button>')};
+window.nitraBuy=(id,i)=>{const m=nitraMalls.find(x=>x.id===id);if(!m||!m.shops[i])return;const item=m.shops[i];const price=15+i*8;openModal('<h2>🏬 '+item+'</h2><p>Vitaj v '+m.name+'. Vyber si malý herný nákup za '+price+' 🪙.</p><button class="btn" onclick="nitraPay('+price+',\''+id+'\')">🛍️ Kúpiť za '+price+' 🪙</button><button class="btn" onclick="openNitraMall(\''+id+'\')">← Späť do centra</button>')};
+window.nitraPay=(price,id)=>{if(s.coins<price)return say('🪙 Nemáš dosť herných mincí.');s.coins-=price;s.happy=Math.min(100,s.happy+12);save();updateHud();say('🛍️ Nákup hotový! +12 radosti');openNitraMall(id)};
+let nitraSport=null;
+window.openNitraSport=type=>{nitraSport={type,shots:0,goals:0};openModal('<h2>'+(type==='football'?'⚽ FC Nitra – streľba na bránu':'🏒 HK Nitra – nájazdy')+'</h2><p>Vyber smer strely ťuknutím. Brankár sa pokúsi chytiť loptu alebo puk.</p><div id="nitraScore" style="font-size:22px;font-weight:800">0 gólov / 0 striel</div><div id="nitraField" style="height:160px;background:linear-gradient(#85c28a,#40764d);border-radius:15px;position:relative;margin:12px 0;overflow:hidden"><div style="position:absolute;top:12px;left:15%;width:70%;height:90px;border:5px solid white;border-bottom:0;border-radius:9px 9px 0 0"></div><div id="nitraGoalie" style="position:absolute;top:62px;left:46%;font-size:34px">🧤</div><div id="nitraBall" style="position:absolute;bottom:5px;left:46%;font-size:28px">'+(type==='football'?'⚽':'🏒')+'</div></div><div class="actions"><button class="btn" onclick="nitraShoot(0)">⬅️ Vľavo</button><button class="btn" onclick="nitraShoot(1)">⬆️ Stred</button><button class="btn" onclick="nitraShoot(2)">➡️ Vpravo</button></div><button class="btn" onclick="openNitraGuide()">← Späť</button>')};
+window.nitraShoot=dir=>{if(!nitraSport)return;const goalie=Math.floor(Math.random()*3);nitraSport.shots++;const goal=goalie!==dir;if(goal){nitraSport.goals++;s.coins+=10;s.happy=Math.min(100,s.happy+3);save();updateHud()}$('nitraScore').textContent=nitraSport.goals+' gólov / '+nitraSport.shots+' striel · '+(goal?'🥳 GÓL! +10 🪙':'🧤 Brankár chytil!');$('nitraGoalie').style.left=['21%','46%','72%'][goalie];$('nitraBall').style.left=['22%','47%','72%'][dir]};
+function nitraUpdate(dt){if(!inside){nitraTrain.position.x+=dt*5.5;if(nitraTrain.position.x>16)nitraTrain.position.x=-84}nitraDistrict.visible=!inside;let best=null,dist=8;const targets=[...nitraMalls.map(m=>({x:m.x,z:m.z-6,label:'🛍️ Vstúpiť: '+m.name,fn:()=>openNitraMall(m.id)})),{x:fx,z:fz-16,label:'⚽ Kopať na bránu',fn:()=>openNitraSport('football')},{x:hx,z:hz+12,label:'🏒 Hrať nájazdy',fn:()=>openNitraSport('hockey')},{x:railX,z:railZ-5,label:'🚆 Pozrieť stanicu',fn:()=>say('🚆 Vitaj na stanici Nitra! Pozri, prichádza vlak.') }];for(const t of targets){let d=Math.hypot(pos.x-t.x,pos.z-t.z);if(d<dist){best=t;dist=d}}nitraQuick.style.display=best&&!inside&&!modal?'block':'none';if(best){nitraQuick.textContent=best.label;nitraQuick.onclick=best.fn}}
+
+
+// CAPILY BOLT-STYLE TAXI — fictional in-game taxi, touch-first controls.
+const capilyTaxiStops=[
+ {name:'OC Mlyny',x:-25,z:35,price:350},
+ {name:'OC Centro Nitra',x:28,z:34,price:390},
+ {name:'OC MAX',x:54,z:43,price:440},
+ {name:'Železničná stanica',x:-45,z:61,price:460},
+ {name:'FC Nitra',x:-46,z:-14,price:420},
+ {name:'Hokejový štadión',x:15,z:-37,price:400},
+ {name:'Wasabi Nitra',x:8,z:16,price:320}
+];
+const capilyTaxiFleet=[];
+function capilyTaxiCar(x,z,shade){
+ const g=new THREE.Group();scene.add(g);
+ const body=new THREE.Mesh(new THREE.BoxGeometry(2.6,.68,4.6),new THREE.MeshStandardMaterial({color:shade,roughness:.38}));body.position.y=.62;g.add(body);
+ const roof=new THREE.Mesh(new THREE.BoxGeometry(2.1,.8,2.4),new THREE.MeshStandardMaterial({color:shade,roughness:.4}));roof.position.set(0,1.28,-.1);g.add(roof);
+ const glass=new THREE.Mesh(new THREE.BoxGeometry(2.13,.45,1.5),new THREE.MeshStandardMaterial({color:'#283f47',roughness:.1,metalness:.1}));glass.position.set(0,1.45,-.15);g.add(glass);
+ const sign=new THREE.Mesh(new THREE.BoxGeometry(1.2,.38,.55),new THREE.MeshStandardMaterial({color:'#f8e9b6',emissive:'#c9a952',emissiveIntensity:.22}));sign.position.set(0,1.94,0);g.add(sign);
+ for(const xx of [-1.22,1.22])for(const zz of [-1.45,1.45]){const w=new THREE.Mesh(new THREE.CylinderGeometry(.42,.42,.22,12),new THREE.MeshStandardMaterial({color:'#222329'}));w.rotation.z=Math.PI/2;w.position.set(xx,.38,zz);g.add(w)}
+ g.position.set(x,0,z);return g;
+}
+for(let i=0;i<5;i++){
+ const path=[[-62,-69],[62,-69],[62,63],[-62,63]];
+ const car=capilyTaxiCar(path[i%4][0],path[i%4][1],i%2?'#f5f6f2':'#a5e6d0');
+ capilyTaxiFleet.push({g:car,path,leg:i%4,speed:3.5+i*.3});
+}
+let capilyTaxiTrip=null;
+const capilyTaxiBtn=document.createElement('button');capilyTaxiBtn.type='button';capilyTaxiBtn.className='btn';capilyTaxiBtn.textContent='🚕 Zavolať taxi';capilyTaxiBtn.style.cssText='position:fixed;left:12px;bottom:calc(env(safe-area-inset-bottom,0px) + 125px);z-index:24;background:#c7f3db;border:2px solid #4a9e7d;border-radius:16px;padding:12px;font-weight:800;touch-action:manipulation;box-shadow:0 4px 12px #0003';capilyTaxiBtn.onclick=()=>window.openCapilyTaxi();document.body.appendChild(capilyTaxiBtn);
+const capilyTaxiMenu=document.createElement('button');capilyTaxiMenu.className='btn';capilyTaxiMenu.textContent='🚕 Taxi (drahé)';capilyTaxiMenu.onclick=()=>window.openCapilyTaxi();document.querySelector('#hud .buttons')?.appendChild(capilyTaxiMenu);
+window.openCapilyTaxi=()=>{
+ if(inside)return say('🚕 Taxi zavoláš až vonku.');
+ if(capilyTaxiTrip)return say('🚕 Taxi už máš objednané!');
+ openModal('<h2>🚕 Capily Taxi</h2><p>Po meste jazdia taxíky. Zavolaj si vlastný, príde po teba a odvezie ťa na miesto. <b>Taxi je zámerne drahé.</b></p><p>🪙 Tvoje mince: '+s.coins+'</p><div class="actions">'+capilyTaxiStops.map((d,i)=>'<button class="btn" style="width:100%;text-align:left;min-height:46px" onclick="bookCapilyTaxi('+i+')">📍 '+d.name+' — 🪙 '+d.price+'</button>').join('')+'</div>');
+};
+window.bookCapilyTaxi=i=>{
+ const d=capilyTaxiStops[i];if(!d)return;
+ if(inside)return say('Vyjdi najprv z budovy.');
+ if(capilyTaxiTrip)return say('🚕 Už máš objednaný taxík.');
+ if(s.coins<d.price)return say('🪙 Na taxi nemáš dosť mincí. Skús bicykel alebo pešo.');
+ if(riding)return say('🚗 Najprv vystúp z vlastného auta.');
+ s.coins-=d.price;save();updateHud();closeModal();
+ const car=capilyTaxiCar(Math.max(-70,Math.min(70,pos.x+13)),Math.max(-70,Math.min(70,pos.z+11)),'#9ce5ca');
+ capilyTaxiTrip={car,d,phase:'pickup',wait:0};say('🚕 Taxi je na ceste! Cena '+d.price+' 🪙. Počkaj, kým príde.');
+};
+function capilyTaxiTick(dt){
+ for(const c of capilyTaxiFleet){c.g.visible=!inside;const next=c.path[(c.leg+1)%c.path.length];const dx=next[0]-c.g.position.x,dz=next[1]-c.g.position.z,dist=Math.hypot(dx,dz);if(dist<.3){c.leg=(c.leg+1)%c.path.length;continue;}const step=Math.min(dist,dt*c.speed);c.g.position.x+=dx/dist*step;c.g.position.z+=dz/dist*step;c.g.rotation.y=Math.atan2(dx,dz);}
+ if(!capilyTaxiTrip)return;
+ const t=capilyTaxiTrip;t.car.visible=!inside;
+ if(t.phase==='pickup'){
+  const tx=Math.max(-72,Math.min(72,pos.x+2.7)),tz=Math.max(-72,Math.min(72,pos.z+2.7));const dx=tx-t.car.position.x,dz=tz-t.car.position.z,dist=Math.hypot(dx,dz);
+  if(dist>.6){const step=Math.min(dist,dt*8);t.car.position.x+=dx/dist*step;t.car.position.z+=dz/dist*step;t.car.rotation.y=Math.atan2(dx,dz)}
+  else{t.phase='waiting';say('🚕 Taxi prišlo! Ťukni na „Nastúpiť do taxi“.');}
+ }
+ if(t.phase==='driving'){
+  const dx=t.d.x-pos.x,dz=t.d.z-pos.z,dist=Math.hypot(dx,dz);
+  if(dist<1){pos.x=t.d.x;pos.z=t.d.z;scene.remove(t.car);capilyTaxiTrip=null;capilyTaxiBoard.style.display='none';say('📍 Dorazila si! Vitaj: '+t.d.name);return;}
+  const step=Math.min(dist,dt*12);pos.x+=dx/dist*step;pos.z+=dz/dist*step;t.car.position.set(pos.x,0,pos.z);t.car.rotation.y=Math.atan2(dx,dz);
+ }
+ capilyTaxiBoard.style.display=t.phase==='waiting'&&!inside&&!modal?'block':'none';
+}
+const capilyTaxiBoard=document.createElement('button');capilyTaxiBoard.className='btn';capilyTaxiBoard.type='button';capilyTaxiBoard.textContent='🚕 Nastúpiť do taxi';capilyTaxiBoard.style.cssText='display:none;position:fixed;left:50%;transform:translateX(-50%);bottom:calc(env(safe-area-inset-bottom,0px) + 195px);z-index:70;background:#b5f4d1;border:2px solid #468866;border-radius:18px;padding:14px;font-weight:900;touch-action:manipulation';capilyTaxiBoard.onclick=()=>{if(capilyTaxiTrip?.phase==='waiting'){capilyTaxiTrip.phase='driving';capilyTaxiBoard.style.display='none';say('🚕 Ideme do '+capilyTaxiTrip.d.name+'!')}};document.body.appendChild(capilyTaxiBoard);
+
+function animate(){requestAnimationFrame(animate);let dt=Math.min(clock.getDelta(),.05);tick(dt);capilyExtrasTick(dt);capilyLifeTick(dt);nitraUpdate(dt);coupleTick(dt);updateEngineAudio();time+=dt;if(time>1){time=0;}renderer.render(scene,camera)}animate();window.capilyReady&&window.capilyReady();
 </script></body></html>

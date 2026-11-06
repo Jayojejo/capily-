@@ -1,0 +1,11 @@
+CAPILY — ŽIVÉ MESTO A REŠTAURÁCIE (6. 11. 2026)
+
+- 8 animovaných NPC kapybár sa samostatne prechádza po mestských trasách.
+- Kapybare postupne ubúda hlad a voda počas hrania; už sa automaticky neresetujú na 100 každú sekundu.
+- Pri hlade pod 65 sa zobrazí „Som hladná!“ a dotykové tlačidlo „Kam sa najesť?“.
+- Zoznam odporúčaných reštaurácií je zoradený podľa vzdialenosti. Po výbere sa ukáže 3D značka cieľa.
+- Pridané tri herné pobočky McDonald's Nitra: Bratislavská cesta 1, OC Mlyny (Štefánikova trieda 61), Nitra-Sever (Na Pasienkoch 5576/14).
+- V McDonald's možno dotykom objednať burger, nuggets či hranolky. Jedlo sa zobrazí ako 3D model na pulte a vyzdvihne tlačidlom.
+- Herné súradnice nie sú presná mapa Nitry. Ceny sú herné, nie skutočné.
+
+Na GitHub stačí nahrať nový index.html. Serverové súbory nechajte bez zmeny.

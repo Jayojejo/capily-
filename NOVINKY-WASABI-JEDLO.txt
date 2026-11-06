@@ -1,0 +1,13 @@
+CAPILY – WASABI A FYZICKÉ JEDLO
+
+- V meste pribudla budova Wasabi Nitra. Vojdi dovnútra a vyber si z ponuky.
+- Po objednaní sa po chvíli na pulte zobrazí 3D model konkrétneho typu jedla/nápoja.
+- Na mobile a iPade klikni na tlačidlo „Vyzdvihnúť“.
+- Pizza Piccolino má po objednávke 3D pizzu s oblohou.
+- Matcha v kaviarni má skutočné farebné vrstvy, ľad a voliteľné prísady.
+- Wasabi ponuka je výber podľa verejného menu, nie kompletný aktuálny lístok.
+- Všetky ceny v hre sú fiktívne herné mince, nie reálne ceny.
+- Zdroj skutočného menu: https://wasabi.order.app.hd.digital/menus
+- Zdroj nápojov: https://www.wasabinitra.sk/alacarte2025.pdf
+
+Online aktualizácia: nahraj index.html do GitHub repozitára a na Renderi nasad najnovší commit.

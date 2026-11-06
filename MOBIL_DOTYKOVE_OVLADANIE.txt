@@ -1,0 +1,3 @@
+Capily – mobil a iPad
+Všetky akcie pri objektoch vykonáš dotykom na veľké tlačidlo: Vstúpiť, Zobrať pizzu, Vypiť matchu, Zobrať objednávku, Rozprávať, Nastúpiť/Vystúpiť. Kláves E zostáva iba ako voliteľná skratka pre počítač.
+Na GitHub stačí nahrať index.html a na Renderi spustiť Deploy latest commit.
