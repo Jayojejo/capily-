@@ -1,0 +1,1 @@
+Nova ikona: capily-icon.png + apple-touch-icon.png. Loading screen: capily-loading.jpg, s realnym progresom pri starte. Nahraj vsetky subory do GitHub repozitara a nasad Render. Ak iPad zobrazuje staru ikonu, odstran odkaz z plochy a pridaj znova.

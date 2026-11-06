@@ -1,0 +1,17 @@
+CAPILY — MOBIL A IPAD
+
+- Na mobile/iPade je horne menu skryte pod tlacidlom ☰ vpravo hore.
+- Pohyb: dotykovy joystick vlavo dole.
+- Otacanie kamery: potiahni prstom po scene.
+- Ked pristupis k dveram alebo predmetu, objavi sa kontextove tlacidlo VSTUPIT / ZOBRAT / ROZPRAVAT atd.
+- Akciu vies vykonat aj tuknutim na informacny napis alebo kratkym tuknutim na scenu pri aktivnej akcii.
+- NEXT zostava ako univerzalne tlacidlo.
+- PC: E a ostatne klavesy zostavaju zachovane.
+
+AKTUALIZACIA ONLINE HRY:
+1. Na GitHub Jayojejo/capily nahraj obsah priecinka Capily-Pre-Pary, najma index.html.
+2. Potvrd Commit changes.
+3. Ak sa Render neaktualizuje automaticky, zvol Manual Deploy > Deploy latest commit.
+4. Na iPade obnov Safari stranku; pripadne zavri a znova otvor ikonu z plochy.
+
+POZNAMKA: Dotykove spravanie je upravene v kode, ale fyzicky test na iPade sa este nerobil.

@@ -1,0 +1,1 @@
+{"name":"capily-pre-pary","version":"1.0.0","private":true,"description":"Capily 3D multiplayer server","scripts":{"start":"node server.js"},"engines":{"node":">=18"},"dependencies":{"ws":"^8.18.0"}}

@@ -1,0 +1,6 @@
+CAPILY – 5 MISIÍ, ŠKÔLKA, PIZZE A KRAJINA
+
+Auto CLS získate až po piatich misiách: 3 pizze, 80 m chôdze, odprevadenie 3 mláďat pešo na ihrisko, športová výhra, skúška v autoškole.
+Škôlka: X=-30 Z=69; ihrisko: X=-13 Z=70. Mláďatá fyzicky nasledujú hráča.
+Pizze sú roztrúsené po meste. Nové vzdialené kopce, kamene, kríky a oblaky.
+Poznámka: model je stále štylizovaný 3D, nie fotorealistický. Multiplayer vyžaduje hostovaný server.

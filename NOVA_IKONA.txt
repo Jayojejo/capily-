@@ -1,0 +1,1 @@
+Nová ikonka Capily: kapybara so slúchadlami a ružovými okuliarmi. Nahraj index.html, capily-icon.png a apple-touch-icon.png na GitHub.

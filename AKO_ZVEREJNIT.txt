@@ -1,0 +1,43 @@
+CAPILY PRE PARY – AKO ZVEREJNIŤ ONLINE MULTIPLAYER
+
+Táto verzia má Node.js WebSocket server. Netlify Drop samotný nestačí.
+
+1. Vytvor si účet na https://github.com a nový repozitár (napr. capily-pre-pary).
+2. Nahraj obsah priečinka Capily-Pre-Pary: index.html, server.js, package.json a render.yaml.
+3. Na https://dashboard.render.com vyber New > Web Service, pripoj GitHub repozitár.
+4. Runtime: Node, Build Command: npm install, Start Command: npm start.
+   Prípadne vyber New > Blueprint a použi render.yaml.
+5. Po nasadení dostaneš verejnú adresu typu https://capily-pre-pary.onrender.com.
+6. Otvor ju v Safari na MacBooku a iPade. Klikni 💑 Hra pre páry.
+7. Jeden hráč vytvorí miestnosť a skopíruje pozvánku; druhý otvorí odkaz.
+8. Tento verejný odkaz môžeš vložiť do Instagram Story cez nálepku Odkaz.
+
+DÔLEŽITÉ:
+- Verejná URL vznikne až po nasadení na server; ZIP samotný nie je verejný odkaz.
+- Server drží miestnosti iba v pamäti; po reštarte sa miestnosti vymažú.
+- Na bezplatnom hostingu sa server môže uspávať; pri prvom otvorení chvíľu počkaj.
+- Hráči sa vidia v spoločnom exteriéri. V interiéri je druhá kapybara skrytá.
+- Zdieľajú pozície, pohyb, mená, farby, emotikony a počet srdiečok. Ekonomika, úlohy a predmety zostávajú lokálne.
+- Multiplayer je prototyp; zatiaľ bez moderácie, registrácie a zabezpečenia proti podvádzaniu. Zdieľaj kód iba s ľuďmi, ktorých chceš pozvať.
+- Three.js sa načítava z internetu.
+
+ODMENA ZA POZVANIE: Za nového hráča, ktorý vstúpi do tvojej miestnosti na inom zariadení, dostaneš 150 mincí. Musíš byť v miestnosti online. Opätovné pripojenie toho istého hráča odmenu nepridá. Ochrana proti opakovaným odmenám sa pri reštarte servera resetuje.
+
+NOVINKY: CLS 1000 HP + zvuk + samostatne ONLINE PRE PARY
+- V hre je velke fialove tlacidlo "ONLINE PRE PARY" na pravej strane obrazovky.
+- Otvor ho, vytvor miestnost a skopiruj pozvanku. Na druhom zariadeni otvor ten isty web a pripoj sa cez kod.
+- Na iPade je tlacidlo nad ovladacmi. Motor sa ozve po nastupeni do auta a prvom dotyku obrazovky.
+- Zvuk je vytvoreny pomocou Web Audio, bez externych zvukovych suborov. 1000 HP je herny arkadovy vykon, nie fyzikalne presny model.
+- Hra sa sama nezverejnuje; verejna adresa vznikne az po nasadeni servera na hosting.
+
+NOVE V TEJTO VERZII:
+- Auto sa pri prvom spusteni tejto aktualizacie automaticky opravi na 0 % skody.
+- Autoservis: tlacidlo vpravo dole alebo klaves R. Oprava stoji 2 mince za 1 % skody.
+- Sporty: tlacidlo SPORTY hore v menu, futbal, basketbal, volejbal, sprint.
+- Sportove vyhry: 30 minci a 20 XP.
+
+GARAZ A SPOLUJAZDCI (nova verzia):
+- Servis najdes v meste pri X=31, Z=9. Prid k dveram a stlac E / Akcia, alebo pouzi GARAZ & TUNING v hornom menu ci R.
+- Oprava stoji 5 minci za 1 % poskodenia.
+- V garazi mozes za mince kupit lak, disky, spojler a neon. Zmeny sa ukladaju a uz kupene volby su pri opakovani zadarmo.
+- SPOLUJAZDCI: vyber az troch NPC kamaratov, ktori sedia v tvojom CLS. Skutocni online hraci sa zatial nevedia vozit ako spolujazdci v tom istom aute.

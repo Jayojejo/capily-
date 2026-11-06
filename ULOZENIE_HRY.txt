@@ -1,0 +1,7 @@
+CAPILY - UKLADANIE POSTUPU
+
+Bezne okno Safari/Chrome: postup, oblecenie, vyzor, mince a misie sa ukladaju v localStorage a ostavaju po zatvoreni a opatovnom otvoreni.
+Anonymne/sukromne okno: ma oddelene docasne ulozisko. Nove sukromne okno po ukonceni predchadzajucej sukromnej relacie zacina od zaciatku.
+Online: hracovi sa jeho lokalny postup neresetuje pri vstupe do miestnosti ani pri obnove stranky. Nie je vsak synchronizovany medzi zariadeniami a nie je chraneny pred vymazanim dat prehliadaca. Na trvale online ucty je potrebne doplnit prihlasenie a databazu.
+
+Zmeneny index.html nahraj na GitHub miesto stareho index.html; ostatne subory ostavaju.

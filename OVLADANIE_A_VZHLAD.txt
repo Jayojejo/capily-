@@ -1,0 +1,1 @@
+PC/Mac: Klikni na 3D svet, myš sa uzamkne. Pohyb myšou otáča kapybaru AJ kameru súčasne. WASD chôdza, ESC uvoľní kurzor pre menu. iPad používa pôvodný dotykový joystick. Vzhľad kapybary sa dá upraviť v editore.

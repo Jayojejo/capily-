@@ -1,0 +1,6 @@
+NOVY ZACIATOK CAPILY
+Pri prvom otvoreni tejto edicie sa vymaze predchadzajuci lokalny herny postup (capily-save).
+Kapybara zacina bez oblecenia, klobuka, kabelky a kozmetickych doplnkov.
+Auto sa ziska az po piatich misiach.
+Dalsie spustenia tejto edicie uz postup normalne ukladaju.
+Pozor: reset sa vykona na kazdom zariadeni a prehliadaci, kde bola starsia verzia hry ulozena.

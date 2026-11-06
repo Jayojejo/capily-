@@ -1,0 +1,1 @@
+PC/Mac: pohyb mysou nad 3D hrou otaca kapybaru smerom ku kurzoru. WASD ostava na pohyb. Tah mysou dalej otaca kameru. iPad ovladanie sa nemeni.

@@ -1,0 +1,7 @@
+CAPILY – MESTO A OVLÁDANIE
+- Chodníky pri hlavných cestách a priechody pre chodcov.
+- Premávka áut v uliciach.
+- Klikateľné tlačidlo Nastúpiť/Vystúpiť pri odomknutom aute (PC, mobil, iPad).
+- Čistejšie herné rozhranie bez nápisu Capily 3D v rohu.
+- Auto sa odomkne až po piatich misiách.
+- Po nahratí na GitHub aktualizujte Render.

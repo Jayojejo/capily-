@@ -1,0 +1,1 @@
+Capily: semafory na 9 krizovatkach, prechody, premavka zastavuje na cervenu; korcule a bicykel cez tlacidlo Pohyb; Natalia pri (12,-28) ponuka dve fantasy herne polozky s 120-sekundovym vizualnym efektom. Po nahrati suborov na GitHub treba redeploy na Render.
